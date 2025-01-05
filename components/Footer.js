@@ -30,7 +30,7 @@ const Footer = () => (
             HD Movies and TV Series Free
             </p> */}
             </div>
-    <p className="text-black hover:px-0 text-bg font-black bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent mt-2 text-center text-sm" >© 2025 Ko-fi-Payat™ - All Rights Reserved</p>
+    <p className="text-black hover:px-0 text-bg font-black bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent mt-2 text-center text-sm" >© 2025 DigitalBay Payat™ - All Rights Reserved</p>
     {/* <nav>
       <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
     </nav> */}
