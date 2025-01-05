@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ko-fi-payat.vercel.app/sitemap.xml

@@ -1,0 +1,94 @@
+.container {
+    text-align: center; /* Center-align all text inside the container */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .title {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-size: 2em; /* Adjust title size */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .details {
+    margin-top: 20px; /* Space above the details */
+  }
+  
+  .centeredDetails {
+    text-align: center; /* Center align text in this div */
+    margin-bottom: 20px; /* Space below the details */
+  }
+  
+  .cast {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center align the cast items */
+  }
+  
+  .actor {
+    margin: 10px; /* Space between actor images */
+    text-align: center; /* Center text below images */
+    width: 100px; /* Fixed width for actor images */
+  }
+  
+  /* Responsive Iframe Wrapper */
+  .iframeWrapper {
+    position: relative; /* Position relative for absolute children */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0; /* Collapse height */
+    overflow: hidden; /* Hide overflow */
+    max-width: 100%; /* Full width */
+    margin: 20px auto; /* Center the iframe */
+  }
+  
+  .iframeContainer {
+    position: absolute; /* Position absolute to fill parent */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+  
+  .iframe {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: none; /* Remove border */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .title {
+      font-size: 1.5em; /* Smaller font size for title on mobile */
+    }
+  
+    .actor {
+      width: 80px; /* Adjust actor image width for smaller screens */
+    }
+    /* In your MovieDetail.module.css */
+.videoPlayerContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* This maintains a 16:9 aspect ratio */
+  border-radius: 15px; /* If you want to keep rounded corners */
+  overflow: hidden; /* Ensures anything overflowing is hidden */
+}
+
+.videoPlayerContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* This makes the iframe fill the parent container */
+  border: none; /* Removes default border */
+}
+.parent-container {
+  width: 100%;
+  max-width: 800px; 
+  margin: auto; 
+}
+
+  }
+  
