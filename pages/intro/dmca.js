@@ -48,29 +48,29 @@ const dmca = () => {
       },
       {
         '@type': 'Organization',
-        '@id': 'https://ko-fi-payat.vercel.app/#organization',
-        name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-        url: 'https://ko-fi-payat.vercel.app'
+        '@id': 'https://digitalbay-payat.vercel.app/#organization',
+        name: 'DigitalBay Payat™ - Online. Stream. Download.',
+        url: 'https://digitalbay-payat.vercel.app'
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://ko-fi-payat.vercel.app/#website',
-        url: 'https://ko-fi-payat.vercel.app',
-        name: 'Ko-fi-Payat™ - Online. Stream. Download.',
+        '@id': 'https://digitalbay-payat.vercel.app/#website',
+        url: 'https://digitalbay-payat.vercel.app',
+        name: 'DigitalBay Payat™ - Online. Stream. Download.',
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://ko-fi-payat.vercel.app/#organization'
+          '@id': 'https://digitalbay-payat.vercel.app/#organization'
         },
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://ko-fi-payat.vercel.app/?s={search_term_string}',
+          target: 'https://digitalbay-payat.vercel.app/?s={search_term_string}',
           'query-input': 'required name=search_term_string'
         }
       },
       {
         '@type': 'WebPage',
-        '@id': 'https://ko-fi-payat.vercel.app/#webpage',
-        url: 'https://ko-fi-payat.vercel.app/',
+        '@id': 'https://digitalbay-payat.vercel.app/#webpage',
+        url: 'https://digitalbay-payat.vercel.app/',
         name: 'Movie',
         datePublished: '2024-01-13T13:00:00+00:00',
         dateModified: '2024-01-13T13:13:00+00:00',
@@ -88,14 +88,14 @@ const dmca = () => {
           }
         },
         isPartOf: {
-          '@id': 'https://ko-fi-payat.vercel.app/#website'
+          '@id': 'https://digitalbay-payat.vercel.app/#website'
         },
         inLanguage: 'en-US',
         mainEntity: [
           {
             '@type': 'Article',
-            '@id': 'https://ko-fi-payat.vercel.app/',
-            url: 'https://ko-fi-payat.vercel.app/',
+            '@id': 'https://digitalbay-payat.vercel.app/',
+            url: 'https://digitalbay-payat.vercel.app/',
             headline: 'Movie',
             datePublished: '2024-01-13T13:00:00+00:00',
             dateModified: '2024-01-13T13:13:00+00:00',
@@ -114,15 +114,15 @@ const dmca = () => {
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://ko-fi-payat.vercel.app/#organization',
-              name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-              url: 'https://ko-fi-payat.vercel.app'
+              '@id': 'https://digitalbay-payat.vercel.app/#organization',
+              name: 'DigitalBay Payat™ - Online. Stream. Download.',
+              url: 'https://digitalbay-payat.vercel.app'
             }
           },
           {
             '@type': 'Article',
-            '@id': 'https://ko-fi-payat.vercel.app/',
-            url: 'https://ko-fi-payat.vercel.app/',
+            '@id': 'https://digitalbay-payat.vercel.app/',
+            url: 'https://digitalbay-payat.vercel.app/',
             headline: 'Tvshow',
             datePublished: '2024-01-13T13:00:00+00:00',
             dateModified: '2024-01-13T13:13:00+00:00',
@@ -141,15 +141,15 @@ const dmca = () => {
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://ko-fi-payat.vercel.app/#organization',
-              name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-              url: 'https://ko-fi-payat.vercel.app'
+              '@id': 'https://digitalbay-payat.vercel.app/#organization',
+              name: 'DigitalBay Payat™ - Online. Stream. Download.',
+              url: 'https://digitalbay-payat.vercel.app'
             }
           },
           {
             '@type': 'Article',
-            '@id': 'https://ko-fi-payat.vercel.app/',
-            url: 'https://ko-fi-payat.vercel.app/',
+            '@id': 'https://digitalbay-payat.vercel.app/',
+            url: 'https://digitalbay-payat.vercel.app/',
             headline: 'Adult',
             datePublished: '2024-01-13T13:00:00+00:00',
             dateModified: '2024-01-13T13:13:00+00:00',
@@ -168,9 +168,9 @@ const dmca = () => {
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://ko-fi-payat.vercel.app/#organization',
-              name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-              url: 'https://ko-fi-payat.vercel.app'
+              '@id': 'https://digitalbay-payat.vercel.app/#organization',
+              name: 'DigitalBay Payat™ - Online. Stream. Download.',
+              url: 'https://digitalbay-payat.vercel.app'
             }
           }
         ]
@@ -181,12 +181,12 @@ const dmca = () => {
   return (
     <div>
       <Head>
-        <title>Ko-fi-Payat™ | DMCA</title>
+        <title>DigitalBay Payat™ | DMCA</title>
         <link
           rel='sitemap'
           type='application/xml'
           title='Sitemap'
-          href='https://ko-fi-payat.vercel.app/sitemap.xml'
+          href='https://digitalbay-payat.vercel.app/sitemap.xml'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel='icon' type='image/x-icon' href='/favicon.ico' />
@@ -220,27 +220,27 @@ const dmca = () => {
         />
         <meta
           property='description'
-          content='Ko-fi-Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
+          content='DigitalBay Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
         />
 
-        <link rel='canonical' href='https://ko-fi-payat.vercel.app/intro/tearms' />
+        <link rel='canonical' href='https://digitalbay-payat.vercel.app/intro/tearms' />
         <meta property='og:locale' content='en_US' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='Ko-fi-Payat™ ' />
+        <meta property='og:title' content='DigitalBay Payat™ ' />
         <meta
           property='og:description'
-          content='Ko-fi-Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
+          content='DigitalBay Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
         />
-        <meta property='og:url' content='https://ko-fi-payat.vercel.app/intro/tearms/' />
-        <meta property='og:site_name' content='Ko-fi-Payat™ ' />
+        <meta property='og:url' content='https://digitalbay-payat.vercel.app/intro/tearms/' />
+        <meta property='og:site_name' content='DigitalBay Payat™ ' />
         <meta
           property='og:image'
-          content='https://ko-fi-payat.vercel.app/og_image.jpg'
+          content='https://digitalbay-payat.vercel.app/og_image.jpg'
         />
         <meta property='og:image:width' content='1280' />
         <meta property='og:image:height' content='720' />
         <meta property='og:image:type' content='image/jpg' />
-        <meta name='application-name' content='Ko-fi-Payat™ ' />
+        <meta name='application-name' content='DigitalBay Payat™ ' />
         <meta
           property='article:modified_time'
           content='2024-01-01T13:13:13+00:00'
@@ -249,7 +249,7 @@ const dmca = () => {
           rel='sitemap'
           type='application/xml'
           title='Sitemap'
-          href='https://ko-fi-payat.vercel.app/sitemap.xml'
+          href='https://digitalbay-payat.vercel.app/sitemap.xml'
         />
         <meta name='twitter:card' content='summary_large_image' />
         <meta

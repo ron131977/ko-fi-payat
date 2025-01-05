@@ -72,14 +72,14 @@ const tvshowSchema = (tvshowItem) =>
         "@type": "WebSite",
         "@id": `${tvshowItem.siteurl}/#website`,
         url: tvshowItem.siteurl,
-        name: "Ko-fi-Payat™ - Online. Stream. Download.",
+        name: "DigitalBay Payat™ - Online. Stream. Download.",
         publisher: {
           "@type": "Organization",
-          "@id": "https://ko-fi-payat.vercel.app/#organization",
+          "@id": "https://digitalbay-payat.vercel.app/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://ko-fi-payat.vercel.app/?s={search_term_string}",
+          target: "https://digitalbay-payat.vercel.app/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
         inLanguage: "en-US",
@@ -88,21 +88,21 @@ const tvshowSchema = (tvshowItem) =>
         "@type": "WebPage",
         "@id": `${tvshowItem.siteurl}/#webpage`,
         url: tvshowItem.siteurl,
-        name: "Ko-fi-Payat™ - Online. Stream. Download.",
+        name: "DigitalBay Payat™ - Online. Stream. Download.",
         isPartOf: {
-          "@id": "https://ko-fi-payat.vercel.app/#website",
+          "@id": "https://digitalbay-payat.vercel.app/#website",
         },
         primaryImageOfPage: {
-          "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
+          "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
         },
         image: {
-          "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
+          "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
         },
-        thumbnailUrl: "https://ko-fi-payat.vercel.app/og_image.jpg",
+        thumbnailUrl: "https://digitalbay-payat.vercel.app/og_image.jpg",
         datePublished: tvshowItem.datePublished,
         dateModified: tvshowItem.dateModified,
         breadcrumb: {
-          "@id": "https://ko-fi-payat.vercel.app/#breadcrumb",
+          "@id": "https://digitalbay-payat.vercel.app/#breadcrumb",
         },
         inLanguage: "en-US",
         potentialAction: [
@@ -134,31 +134,31 @@ const tvshowSchema = (tvshowItem) =>
         },
         publisher: {
           "@type": "Organization",
-          "@id": "https://ko-fi-payat.vercel.app/#organization",
-          name: "Ko-fi-Payat™ - Online. Stream. Download.",
-          url: "https://ko-fi-payat.vercel.app",
+          "@id": "https://digitalbay-payat.vercel.app/#organization",
+          name: "DigitalBay Payat™ - Online. Stream. Download.",
+          url: "https://digitalbay-payat.vercel.app",
         },
         image: {
-          "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
+          "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
         },
       },
       {
         "@type": "ImageObject",
-        "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
-        url: "https://ko-fi-payat.vercel.app/og_image.jpg",
-        contentUrl: "https://ko-fi-payat.vercel.app/og_image.jpg",
+        "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
+        url: "https://digitalbay-payat.vercel.app/og_image.jpg",
+        contentUrl: "https://digitalbay-payat.vercel.app/og_image.jpg",
         width: 1280,
         height: 720,
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://ko-fi-payat.vercel.app/#breadcrumb",
+        "@id": "https://digitalbay-payat.vercel.app/#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://ko-fi-payat.vercel.app/",
+            item: "https://digitalbay-payat.vercel.app/",
           },
         ],
       },
@@ -317,7 +317,7 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://ko-fi-payat.vercel.app/sitemap.xml"
+          href="https://digitalbay-payat.vercel.app/sitemap.xml"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -353,35 +353,35 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
         <meta name="keywords" content={tvshowItem.keywords} />
         <meta
           property="og:description"
-          content="Stream HD movies and TV series for free on Ko-fi-Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
+          content="Stream HD movies and TV series for free on DigitalBay Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
         <meta
           name="description"
-          content="Stream HD movies and TV series for free on Ko-fi-Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
+          content="Stream HD movies and TV series for free on DigitalBay Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
         <link rel="canonical" href={tvshowItem.siteurl} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Ko-fi-Payat™ - Online. Stream. Download. "
+          content=" DigitalBay Payat™ - Online. Stream. Download. "
         />
         <meta property="og:url" content={tvshowItem.siteurl} />
 
         <meta
           property="og:site_name"
-          content=" Ko-fi-Payat™ - Online. Stream. Download. "
+          content=" DigitalBay Payat™ - Online. Stream. Download. "
         />
         <meta
           property="og:image"
-          content="https://ko-fi-payat.vercel.app/og_image.jpg"
+          content="https://digitalbay-payat.vercel.app/og_image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpg" />
         <meta
           name="application-name"
-          content=" Ko-fi-Payat™ - Online. Stream. Download. "
+          content=" DigitalBay Payat™ - Online. Stream. Download. "
         />
         <meta
           property="article:modified_time"
@@ -391,20 +391,20 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://ko-fi-payat.vercel.app/sitemap.xml"
+          href="https://digitalbay-payat.vercel.app/sitemap.xml"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content=" Ko-fi-Payat™ - Online. Stream. Download."
+          content=" DigitalBay Payat™ - Online. Stream. Download."
         />
         <meta
           name="twitter:description"
-          content="Stream HD movies and TV series for free on Ko-fi-Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
+          content="Stream HD movies and TV series for free on DigitalBay Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
         <meta
           name="twitter:image"
-          content="https://ko-fi-payat.vercel.app/og_image.jpg"
+          content="https://digitalbay-payat.vercel.app/og_image.jpg"
         />
         <meta
           name="google-site-verification"

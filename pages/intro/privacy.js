@@ -25,29 +25,29 @@ const Privacy = () => {
       },
       {
         '@type': 'Organization',
-        '@id': 'https://ko-fi-payat.vercel.app/#organization',
-        name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-        url: 'https://ko-fi-payat.vercel.app'
+        '@id': 'https://digitalbay-payat.vercel.app/#organization',
+        name: 'DigitalBay Payat™ - Online. Stream. Download.',
+        url: 'https://digitalbay-payat.vercel.app'
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://ko-fi-payat.vercel.app/#website',
-        url: 'https://ko-fi-payat.vercel.app',
-        name: 'Ko-fi-Payat™ - Online. Stream. Download.',
+        '@id': 'https://digitalbay-payat.vercel.app/#website',
+        url: 'https://digitalbay-payat.vercel.app',
+        name: 'DigitalBay Payat™ - Online. Stream. Download.',
         publisher: {
           '@type': 'Organization',
-          '@id': 'https://ko-fi-payat.vercel.app/#organization'
+          '@id': 'https://digitalbay-payat.vercel.app/#organization'
         },
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://ko-fi-payat.vercel.app/?s={search_term_string}',
+          target: 'https://digitalbay-payat.vercel.app/?s={search_term_string}',
           'query-input': 'required name=search_term_string'
         }
       },
       {
         '@type': 'WebPage',
-        '@id': 'https://ko-fi-payat.vercel.app/#webpage',
-        url: 'https://ko-fi-payat.vercel.app/',
+        '@id': 'https://digitalbay-payat.vercel.app/#webpage',
+        url: 'https://digitalbay-payat.vercel.app/',
         name: 'Movie',
         datePublished: '2024-01-13T13:00:00+00:00',
         dateModified: '2024-01-13T13:13:00+00:00',
@@ -65,14 +65,14 @@ const Privacy = () => {
           }
         },
         isPartOf: {
-          '@id': 'https://ko-fi-payat.vercel.app/#website'
+          '@id': 'https://digitalbay-payat.vercel.app/#website'
         },
         inLanguage: 'en-US',
         mainEntity: [
           {
             '@type': 'Article',
-            '@id': 'https://ko-fi-payat.vercel.app/',
-            url: 'https://ko-fi-payat.vercel.app/',
+            '@id': 'https://digitalbay-payat.vercel.app/',
+            url: 'https://digitalbay-payat.vercel.app/',
             headline: 'Movie',
             datePublished: '2024-01-13T13:00:00+00:00',
             dateModified: '2024-01-13T13:13:00+00:00',
@@ -91,15 +91,15 @@ const Privacy = () => {
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://ko-fi-payat.vercel.app/#organization',
-              name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-              url: 'https://ko-fi-payat.vercel.app'
+              '@id': 'https://digitalbay-payat.vercel.app/#organization',
+              name: 'DigitalBay Payat™ - Online. Stream. Download.',
+              url: 'https://digitalbay-payat.vercel.app'
             }
           },
           {
             '@type': 'Article',
-            '@id': 'https://ko-fi-payat.vercel.app/',
-            url: 'https://ko-fi-payat.vercel.app/',
+            '@id': 'https://digitalbay-payat.vercel.app/',
+            url: 'https://digitalbay-payat.vercel.app/',
             headline: 'Tvshow',
             datePublished: '2024-01-13T13:00:00+00:00',
             dateModified: '2024-01-13T13:13:00+00:00',
@@ -118,15 +118,15 @@ const Privacy = () => {
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://ko-fi-payat.vercel.app/#organization',
-              name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-              url: 'https://ko-fi-payat.vercel.app'
+              '@id': 'https://digitalbay-payat.vercel.app/#organization',
+              name: 'DigitalBay Payat™ - Online. Stream. Download.',
+              url: 'https://digitalbay-payat.vercel.app'
             }
           },
           {
             '@type': 'Article',
-            '@id': 'https://ko-fi-payat.vercel.app/',
-            url: 'https://ko-fi-payat.vercel.app/',
+            '@id': 'https://digitalbay-payat.vercel.app/',
+            url: 'https://digitalbay-payat.vercel.app/',
             headline: 'Adult',
             datePublished: '2024-01-13T13:00:00+00:00',
             dateModified: '2024-01-13T13:13:00+00:00',
@@ -145,9 +145,9 @@ const Privacy = () => {
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://ko-fi-payat.vercel.app/#organization',
-              name: 'Ko-fi-Payat™ - Online. Stream. Download.',
-              url: 'https://ko-fi-payat.vercel.app'
+              '@id': 'https://digitalbay-payat.vercel.app/#organization',
+              name: 'DigitalBay Payat™ - Online. Stream. Download.',
+              url: 'https://digitalbay-payat.vercel.app'
             }
           }
         ]
@@ -160,13 +160,13 @@ const Privacy = () => {
   return (
     <div>
        <Head>
-        <title>Ko-fi-Payat™ | Privacy Policy</title>
+        <title>DigitalBay Payat™ | Privacy Policy</title>
       
         <link
             rel='sitemap'
             type='application/xml'
             title='Sitemap'
-            href='https://ko-fi-payat.vercel.app/sitemap.xml'
+            href='https://digitalbay-payat.vercel.app/sitemap.xml'
           />
           <meta
             name='viewport'
@@ -207,35 +207,35 @@ const Privacy = () => {
           />
           <meta
           property='description'
-          content='Ko-fi-Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
+          content='DigitalBay Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
         />
 
-          <link rel='canonical' href='https://ko-fi-payat.vercel.app/intro/privacy' />
+          <link rel='canonical' href='https://digitalbay-payat.vercel.app/intro/privacy' />
           <meta property='og:locale' content='en_US' />
           <meta property='og:type' content='website' />
           <meta
             property='og:title'
-            content='Ko-fi-Payat™ '
+            content='DigitalBay Payat™ '
           />
           <meta
             property='og:description'
-            content='Ko-fi-Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
+            content='DigitalBay Payat™ - Stream HD movies and TV series for free on Justwatch Free Online. Online. Stream. Download. full-length movies and shows in HD quality without registration.'
           />
-          <meta property='og:url' content='https://ko-fi-payat.vercel.app/intro/privacy/' />
+          <meta property='og:url' content='https://digitalbay-payat.vercel.app/intro/privacy/' />
           <meta
             property='og:site_name'
-            content='Ko-fi-Payat™ '
+            content='DigitalBay Payat™ '
           />
           <meta
             property='og:image'
-            content='https://ko-fi-payat.vercel.app/og_image.jpg'
+            content='https://digitalbay-payat.vercel.app/og_image.jpg'
           />
           <meta property='og:image:width' content='1280' />
           <meta property='og:image:height' content='720' />
           <meta property='og:image:type' content='image/jpg' />
           <meta
             name='application-name'
-            content='Ko-fi-Payat™ '
+            content='DigitalBay Payat™ '
           />
           <meta
             property='article:modified_time'
@@ -245,7 +245,7 @@ const Privacy = () => {
             rel='sitemap'
             type='application/xml'
             title='Sitemap'
-            href='https://ko-fi-payat.vercel.app/sitemap.xml'
+            href='https://digitalbay-payat.vercel.app/sitemap.xml'
           />
           <meta name='twitter:card' content='summary_large_image' />
           <meta
@@ -287,15 +287,15 @@ const Privacy = () => {
   <div className="flex flex-wrap">
     <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full  px-3 lg:px-6">
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
-      <p className="font-bold mb-2">Ko-fi-Payat™ </p>
+      <p className="font-bold mb-2">DigitalBay Payat™ </p>
       <p className="text-gray-500 mb-6">
-      Ko-fi-Payat™ International(Ko-fi-Payat™) is committed to protecting your privacy. This Privacy Policy applies only to the Web Sites and applications published by Ko-fi-Payat™ International.
+      DigitalBay Payat™ International(DigitalBay Payat™) is committed to protecting your privacy. This Privacy Policy applies only to the Web Sites and applications published by DigitalBay Payat™ International.
       </p>
       <p className="font-bold mb-2">Note: Use of Information</p>
       <p className="text-gray-500 mb-6">
       Information that we collect  </p>
       <p className="text-gray-500 mb-6">
-      Ko-fi-Payat™ may collect information from its users in three different ways: directly from the user, from traffic references of hostingservers and from cookies.
+      DigitalBay Payat™ may collect information from its users in three different ways: directly from the user, from traffic references of hostingservers and from cookies.
       </p>
       <p className="font-bold mb-2">We use the information we collect to:</p>
       <p className="text-gray-500 mb-6">
@@ -312,7 +312,7 @@ const Privacy = () => {
 
      
       <p className="text-gray-500">
-      We do not make warranties that this site will operate error free. If you see an error, please contact the <a className="font-bold text-blue-500 mb-6" href="mailto:drtrailer2022@gmail.com ">webmaster</a>. By entering this site you agree to hold the owners, employees, advertisers of Ko-fi-Payat™  free from any and all liability.This site (Ko-fi-Payat™ ) do not offer any membership.If you have any questions please feel free to <a className="font-bold text-blue-500 mb-6" href="mailto:drtrailer2022@gmail.com.com">contact us</a>.
+      We do not make warranties that this site will operate error free. If you see an error, please contact the <a className="font-bold text-blue-500 mb-6" href="mailto:drtrailer2022@gmail.com ">webmaster</a>. By entering this site you agree to hold the owners, employees, advertisers of DigitalBay Payat™  free from any and all liability.This site (DigitalBay Payat™ ) do not offer any membership.If you have any questions please feel free to <a className="font-bold text-blue-500 mb-6" href="mailto:drtrailer2022@gmail.com.com">contact us</a>.
       </p>
     </div>
 

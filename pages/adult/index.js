@@ -97,49 +97,49 @@ export default function adult({ adultData }) {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://ko-fi-payat.vercel.app/#organization",
-        name: "Ko-fi-Payat™ – Adult Section.",
-        url: "https://ko-fi-payat.vercel.app/",
+        "@id": "https://digitalbay-payat.vercel.app/#organization",
+        name: "DigitalBay Payat™ – Adult Section.",
+        url: "https://digitalbay-payat.vercel.app/",
       },
       {
         "@type": "WebSite",
-        "@id": "https://ko-fi-payat.vercel.app/adult#website",
-        url: "https://ko-fi-payat.vercel.app/adult",
-        name: "Ko-fi-Payat™ – Adult Section.",
+        "@id": "https://digitalbay-payat.vercel.app/adult#website",
+        url: "https://digitalbay-payat.vercel.app/adult",
+        name: "DigitalBay Payat™ – Adult Section.",
         publisher: {
           "@type": "Organization",
-          "@id": "https://ko-fi-payat.vercel.app/#organization",
+          "@id": "https://digitalbay-payat.vercel.app/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://ko-fi-payat.vercel.app/?s={search_term_string}",
+          target: "https://digitalbay-payat.vercel.app/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "WebPage",
-        "@id": "https://ko-fi-payat.vercel.app/adult#webpage",
-        url: "https://ko-fi-payat.vercel.app/adult",
+        "@id": "https://digitalbay-payat.vercel.app/adult#webpage",
+        url: "https://digitalbay-payat.vercel.app/adult",
         name: "Movies & Tv Shows",
         datePublished: "2024-01-13T13:00:00+00:00",
         dateModified: "2024-01-13T13:13:00+00:00",
         isPartOf: {
-          "@id": "https://ko-fi-payat.vercel.app/#website",
+          "@id": "https://digitalbay-payat.vercel.app/#website",
         },
         inLanguage: "en-US",
         mainEntity: [
           {
             "@type": "Article",
-            "@id": "https://ko-fi-payat.vercel.app/adult",
-            url: "https://ko-fi-payat.vercel.app/adult",
-            headline: "Ko-fi-Payat™",
+            "@id": "https://digitalbay-payat.vercel.app/adult",
+            url: "https://digitalbay-payat.vercel.app/adult",
+            headline: "DigitalBay Payat™",
             datePublished: "2024-01-13T13:00:00+00:00",
             dateModified: "2024-01-13T13:13:00+00:00",
             publisher: {
               "@type": "Organization",
-              "@id": "https://ko-fi-payat.vercel.app/#organization",
-              name: "Ko-fi-Payat™ – Adult Section.",
-              url: "https://ko-fi-payat.vercel.app/",
+              "@id": "https://digitalbay-payat.vercel.app/#organization",
+              name: "DigitalBay Payat™ – Adult Section.",
+              url: "https://digitalbay-payat.vercel.app/",
             },
           },
         ],
@@ -158,68 +158,68 @@ export default function adult({ adultData }) {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://ko-fi-payat.vercel.app/adult",
-        url: "https://ko-fi-payat.vercel.app/adult",
-        name: "Ko-fi-Payat™ – Adult Section",
-        isPartOf: { "@id": "https://ko-fi-payat.vercel.app/#website" },
-        about: { "@id": "https://ko-fi-payat.vercel.app/#organization" },
+        "@id": "https://digitalbay-payat.vercel.app/adult",
+        url: "https://digitalbay-payat.vercel.app/adult",
+        name: "DigitalBay Payat™ – Adult Section",
+        isPartOf: { "@id": "https://digitalbay-payat.vercel.app/#website" },
+        about: { "@id": "https://digitalbay-payat.vercel.app/#organization" },
         primaryImageOfPage: {
-          "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
+          "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
         },
         image: {
-          "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
+          "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
         },
-        thumbnailUrl: "https://ko-fi-payat.vercel.app/og_image.jpg",
+        thumbnailUrl: "https://digitalbay-payat.vercel.app/og_image.jpg",
         datePublished: "2023-07-02T18:30:00+00:00",
         dateModified: "2024-09-24T05:11:20+00:00",
         breadcrumb: {
-          "@id": "https://ko-fi-payat.vercel.app/adult#breadcrumb",
+          "@id": "https://digitalbay-payat.vercel.app/adult#breadcrumb",
         },
         inLanguage: "en-US",
         potentialAction: [
           {
             "@type": "ReadAction",
-            target: ["https://ko-fi-payat.vercel.app/adult"],
+            target: ["https://digitalbay-payat.vercel.app/adult"],
           },
         ],
       },
       {
         "@type": "ImageObject",
         inLanguage: "en-US",
-        "@id": "https://ko-fi-payat.vercel.app/#primaryimage",
-        url: "https://ko-fi-payat.vercel.app/og_image.jpg",
-        contentUrl: "https://ko-fi-payat.vercel.app/og_image.jpg",
+        "@id": "https://digitalbay-payat.vercel.app/#primaryimage",
+        url: "https://digitalbay-payat.vercel.app/og_image.jpg",
+        contentUrl: "https://digitalbay-payat.vercel.app/og_image.jpg",
         width: 1280,
         height: 720,
-        caption: "Ko-fi-Payat™ – Adult Section",
+        caption: "DigitalBay Payat™ – Adult Section",
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://ko-fi-payat.vercel.app/adult#breadcrumb",
+        "@id": "https://digitalbay-payat.vercel.app/adult#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "adult",
-            item: "https://ko-fi-payat.vercel.app/adult",
+            item: "https://digitalbay-payat.vercel.app/adult",
           },
         ],
       },
       {
         "@type": "WebSite",
-        "@id": "https://ko-fi-payat.vercel.app/#website",
-        url: "https://ko-fi-payat.vercel.app/",
-        name: "Ko-fi-Payat™ – Adult Section",
+        "@id": "https://digitalbay-payat.vercel.app/#website",
+        url: "https://digitalbay-payat.vercel.app/",
+        name: "DigitalBay Payat™ – Adult Section",
         description:
           "",
-        publisher: { "@id": "https://ko-fi-payat.vercel.app/#organization" },
+        publisher: { "@id": "https://digitalbay-payat.vercel.app/#organization" },
         potentialAction: [
           {
             "@type": "SearchAction",
             target: {
               "@type": "EntryPoint",
               urlTemplate:
-                "https://ko-fi-payat.vercel.app/?s={search_term_string}",
+                "https://digitalbay-payat.vercel.app/?s={search_term_string}",
             },
             "query-input": "required name=search_term_string",
           },
@@ -228,21 +228,21 @@ export default function adult({ adultData }) {
       },
       {
         "@type": "Organization",
-        "@id": "https://ko-fi-payat.vercel.app/#organization",
-        name: "Ko-fi-Payat™ – Adult Section",
-        url: "https://ko-fi-payat.vercel.app/",
+        "@id": "https://digitalbay-payat.vercel.app/#organization",
+        name: "DigitalBay Payat™ – Adult Section",
+        url: "https://digitalbay-payat.vercel.app/",
         logo: {
           "@type": "ImageObject",
           inLanguage: "en-US",
-          "@id": "https://ko-fi-payat.vercel.app/#logo",
-          url: "https://ko-fi-payat.vercel.app/logo.png",
-          contentUrl: "https://ko-fi-payat.vercel.app/logo.png",
+          "@id": "https://digitalbay-payat.vercel.app/#logo",
+          url: "https://digitalbay-payat.vercel.app/logo.png",
+          contentUrl: "https://digitalbay-payat.vercel.app/logo.png",
           width: 280,
           height: 100,
-          caption: "Ko-fi-Payat™ – Adult Section",
+          caption: "DigitalBay Payat™ – Adult Section",
         },
         image: {
-          "@id": "https://ko-fi-payat.vercel.app/#logo",
+          "@id": "https://digitalbay-payat.vercel.app/#logo",
         },
       },
     ],
@@ -251,13 +251,13 @@ export default function adult({ adultData }) {
   return (
     <>
       <Head>
-        <title> Ko-fi-Payat™ – Adult Section.</title>
+        <title> DigitalBay Payat™ – Adult Section.</title>
 
         <link
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://ko-fi-payat.vercel.app/sitemap.xml"
+          href="https://digitalbay-payat.vercel.app/sitemap.xml"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -296,37 +296,37 @@ export default function adult({ adultData }) {
         />
         <meta
           property="og:description"
-          content="Stream HD movies and TV series for free on Ko-fi-Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
+          content="Stream HD movies and TV series for free on DigitalBay Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
         <meta
           name="description"
-          content="Stream HD movies and TV series for free on Ko-fi-Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
+          content="Stream HD movies and TV series for free on DigitalBay Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
-        <link rel="canonical" href="https://ko-fi-payat.vercel.app/adult" />
+        <link rel="canonical" href="https://digitalbay-payat.vercel.app/adult" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Ko-fi-Payat™ – Adult Section. "
+          content=" DigitalBay Payat™ – Adult Section. "
         />
         <meta
           property="og:url"
-          content="https://ko-fi-payat.vercel.app/adult"
+          content="https://digitalbay-payat.vercel.app/adult"
         />
         <meta
           property="og:site_name"
-          content=" Ko-fi-Payat™ – Adult Section. "
+          content=" DigitalBay Payat™ – Adult Section. "
         />
         <meta
           property="og:image"
-          content="https://ko-fi-payat.vercel.app/og_image.jpg"
+          content="https://digitalbay-payat.vercel.app/og_image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpg" />
         <meta
           name="application-name"
-          content=" Ko-fi-Payat™ – Adult Section. "
+          content=" DigitalBay Payat™ – Adult Section. "
         />
         <meta
           property="article:modified_time"
@@ -336,20 +336,20 @@ export default function adult({ adultData }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://ko-fi-payat.vercel.app/sitemap.xml"
+          href="https://digitalbay-payat.vercel.app/sitemap.xml"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content=" Ko-fi-Payat™ – Adult Section."
+          content=" DigitalBay Payat™ – Adult Section."
         />
         <meta
           name="twitter:description"
-          content="Stream HD movies and TV series for free on Ko-fi-Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
+          content="Stream HD movies and TV series for free on DigitalBay Payat™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
         <meta
           name="twitter:image"
-          content="https://ko-fi-payat.vercel.app/og_image.jpg"
+          content="https://digitalbay-payat.vercel.app/og_image.jpg"
         />
         <meta
           name="google-site-verification"
@@ -385,7 +385,7 @@ export default function adult({ adultData }) {
           Back to Main Section
         </button>
       </div>
-        <h1 style={styles.title}>Ko-fi-Payat™ Adult Section.</h1>
+        <h1 style={styles.title}>DigitalBay Payat™ Adult Section.</h1>
 
         <div style={styles.dateTime}>
           <div
