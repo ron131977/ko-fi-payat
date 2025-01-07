@@ -404,7 +404,7 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
         />
         <meta
           name="twitter:image"
-          content="https://digitalbaymediahub.vercel.app/og_image.jpg"
+          content={tvshowItem.image1}
         />
         <meta
           name="google-site-verification"

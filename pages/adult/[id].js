@@ -406,7 +406,7 @@ export default function adultArticle({ adultItem, videoSources = [] }) {
         />
         <meta
           name="twitter:image"
-          content="https://digitalbaymediahub.vercel.app/og_image.jpg"
+          content={adultItem.image1}
         />
         <meta
           name="google-site-verification"

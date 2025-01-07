@@ -408,7 +408,7 @@ const moviesSchema = (moviesItem) =>
         />
         <meta
           name="twitter:image"
-          content="https://digitalbaymediahub.vercel.app/og_image.jpg"
+          content={moviesItem.image1}
         />
         <meta
           name="google-site-verification"
