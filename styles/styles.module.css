@@ -1,0 +1,55 @@
+.imageContainer {
+  display: flex;
+  justify-content: center; /* Center the entire container */
+  align-items: center; /* Center content vertically if needed */
+  margin-top: 20px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+  grid-gap: 10px; /* Gap between grid items */
+  justify-content: center; /* Center the grid items */
+}
+
+@media (min-width: 768px) {
+  .imageGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on screens wider than 768px */
+  }
+}
+
+.image {
+  width: 200px; /* Default image size for desktops */
+  height: 200px;
+  border-radius: 50%; /* Perfect circular image */
+  border: 2px solid #a5a9b4; /* Add border with color */
+  margin: 0 auto; /* Center each image */
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 180px; /* Adjust image size for mobile devices */
+    height: 180px; /* Maintain equal width and height */
+  }
+  .movie-container {
+    padding: 20px;
+    text-align: center; /* Center-align text within the container */
+  }
+  .movie-info {
+    margin-top: 10px;
+  }
+  .synopsis {
+    margin-top: 20px;
+  }
+  .trailer {
+    margin-top: 20px;
+  }
+  .actors {
+    margin-top: 20px;
+  }
+  .actor-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center-align the flex items */
+  }
+}
