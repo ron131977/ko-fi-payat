@@ -948,24 +948,18 @@ const styles = {
   },
 
   playerButtonContainer: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "10px",
-    marginTop: "20px",
-    flexWrap: "wrap", // Wrap buttons for smaller screens
+    textAlign: "center",
+    marginBottom: "20px",
   },
-
   playerButton: {
+    backgroundColor: "#007BFF",
+    color: "white",
     padding: "10px 20px",
-    backgroundColor: "#d6d6d6",
     borderRadius: "5px",
-    fontSize: "16px",
-    fontWeight: "bold",
-    color: "#000",
+    border: "none",
     cursor: "pointer",
-    transition: "all 0.3s",
+    fontSize: "18px",
   },
-
   activePlayerButton: {
     backgroundColor: "#f44336",
     color: "#fff",
@@ -1006,19 +1000,6 @@ const styles = {
     height: "100%",
     border: "none",
   },
-  // backButton: {
-  //   position: "absolute",
-  //   top: "20px",
-  //   left: "20px",
-  //   zIndex: 1100,
-  //   padding: "10px 15px",
-  //   backgroundColor: "#FF5733",
-  //   color: "#fff",
-  //   border: "none",
-  //   borderRadius: "5px",
-  //   cursor: "pointer",
-  //   fontSize: "16px",
-  // },
   backButton: {
     padding: "10px 20px",
     backgroundColor: "#FF5733",
@@ -1028,21 +1009,14 @@ const styles = {
     cursor: "pointer",
     fontSize: "16px",
     display: "flex",
-    marginTop: "20px",
+    marginTop:"20px",
     zIndex: 1100,
     alignItems: "center", // Centers vertically
   },
-  // source: { margin: "20px" },
+  
+   // source: { margin: "20px" },
   // title: { fontSize: "20px", textAlign: "center" },
-  youtubePlayer: {
-    width: "100%",
-    height: "460px",
-    filter: "contrast(1.1) saturate(1.2) brightness(1.3) hue-rotate(0deg)",
-  },
-  dailymotionPlayer: {
-    width: "100%",
-    height: "460px",
-    filter: "contrast(1.1) saturate(1.2) brightness(1.3) hue-rotate(0deg)",
-  },
+  youtubePlayer: { width: "100%", height: "460px",  filter: "contrast(1.1) saturate(1.2) brightness(1.3) hue-rotate(0deg)", },
+  dailymotionPlayer: { width: "100%", height: "460px",  filter: "contrast(1.1) saturate(1.2) brightness(1.3) hue-rotate(0deg)"},
   noVideo: { color: "red", textAlign: "center" },
 };
