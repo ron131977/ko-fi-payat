@@ -376,7 +376,7 @@ export default function adultArticle({ adultItem, videoSources = [] }) {
         />
         <meta
           property="og:image"
-          content="https://digitalbaymediahub.vercel.app/og_image.jpg"
+          content={adultItem.image1}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

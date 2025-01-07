@@ -374,7 +374,7 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
         />
         <meta
           property="og:image"
-          content="https://digitalbaymediahub.vercel.app/og_image.jpg"
+          content={tvshowItem.image1}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
