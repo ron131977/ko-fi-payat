@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SocialSharing from "../components/SocialSharing";
 import movies from "../public/movies.json";
 import tvshow from "../public/tvshow.json";
@@ -15,7 +15,6 @@ function generateSlug(title) {
     .replace(/[^a-z0-9]+/g, "-") // Replace non-alphanumeric characters with dashes
     .replace(/^-+|-+$/g, ""); // Remove leading/trailing dashes
 }
-
 
 const uwatchfreeSchema = JSON.stringify([
   {
@@ -108,7 +107,8 @@ const rankMathSchema = JSON.stringify({
           "@type": "Article",
           "@id": "https://buyonlinemovies.vercel.app/",
           url: "https://buyonlinemovies.vercel.app/",
-          headline: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
+          headline:
+            "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
           datePublished: "2024-01-13T13:00:00+00:00",
           dateModified: "2024-01-13T13:13:00+00:00",
           author: {
@@ -135,7 +135,8 @@ const rankMathSchema = JSON.stringify({
           "@type": "Article",
           "@id": "https://buyonlinemovies.vercel.app/",
           url: "https://buyonlinemovies.vercel.app/",
-          headline: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
+          headline:
+            "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
           datePublished: "2024-01-13T13:00:00+00:00",
           dateModified: "2024-01-13T13:13:00+00:00",
           author: {
@@ -162,7 +163,8 @@ const rankMathSchema = JSON.stringify({
           "@type": "Article",
           "@id": "https://buyonlinemovies.vercel.app/",
           url: "https://buyonlinemovies.vercel.app/",
-          headline: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
+          headline:
+            "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
           datePublished: "2024-01-13T13:00:00+00:00",
           dateModified: "2024-01-13T13:13:00+00:00",
           author: {
@@ -188,6 +190,20 @@ function HomePage({ allData }) {
   const [currentCategory, setCurrentCategory] = useState("movies"); // Default to 'movies'
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 24;
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  // Automatically display popup after 2 minutes (120000ms)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 10000); // 30 seconds timer
+
+    return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
+  }, []);
+
+  const closePopup = () => {
+    setIsPopupVisible(false);
+  };
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
@@ -236,31 +252,6 @@ function HomePage({ allData }) {
 
   const totalPages = Math.ceil(allData[currentCategory]?.length / itemsPerPage);
 
-  // useEffect(() => {
-  //   // Dynamically load the Ko-fi widget script
-  //   const kofiScript = document.createElement('script');
-  //   kofiScript.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
-  //   kofiScript.async = true;
-  
-  //   kofiScript.onload = () => {
-  //     console.log("Ko-fi widget loaded.");
-  //     if (typeof kofiWidgetOverlay !== 'undefined') {
-  //       kofiWidgetOverlay.draw('payat', {
-  //         'type': 'floating-chat',
-  //         'floating-chat.donateButton.text': 'Support me',
-  //         'floating-chat.donateButton.background-color': '#00b9fe',
-  //         'floating-chat.donateButton.text-color': '#fff'
-  //       });
-  //     }
-  //   };
-  
-  //   document.body.appendChild(kofiScript);
-  
-  //   return () => {
-  //     document.body.removeChild(kofiScript);
-  //   };
-  // }, []);
-  
   return (
     <>
       <Head>
@@ -299,18 +290,21 @@ function HomePage({ allData }) {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
-         <meta
+        <meta
           property="og:keywords"
           content="DigitalBay Entertainment Hub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters"
         />
-         <meta name="keywords" content="DigitalBay Entertainment Hub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters" />
+        <meta
+          name="keywords"
+          content="DigitalBay Entertainment Hub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters"
+        />
         <meta
           name="description"
           content="Explore the World of Digital Entertainment @ $1.00 USD – Books, Movies, Music, and More!"
         />
         <link rel="canonical" href="https://buyonlinemovies.vercel.app/" />
         <meta property="og:locale" content="en_US" />
-        
+
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
@@ -381,9 +375,11 @@ function HomePage({ allData }) {
       </Head>
       <SocialSharing />
       <div className="container mx-auto mt-3 text-center">
-      <div className="container">
+        <div className="container">
           <div className="content">
-            <h1 className="title">DigitalBay Entertainment Hub™ - @ $1.00 USD</h1>
+            <h1 className="title">
+              DigitalBay Entertainment Hub™ - @ $1.00 USD
+            </h1>
 
             <a
               href="https://t.me/ondigitalbay"
@@ -463,7 +459,88 @@ function HomePage({ allData }) {
             </button>
           </div>
         )}
-        {/* Items Grid */}
+        {/* Popup overlay */}
+        {isPopupVisible && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 9999,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: "10px",
+                maxWidth: "90%",
+                width: "400px",
+                boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+                animation: "fadeIn 0.3s ease-in-out",
+                padding: "20px",
+                textAlign: "center", // Ensures all content is center-aligned
+                position: "relative", // Important for positioning the close button
+              }}
+            >
+              <h2
+                className="animate-pulse"
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                  color: "red",
+                  margin: "0 0 10px", // Adds space below the heading
+                }}
+              >
+                Alert Message !!!
+              </h2>
+              <button
+                onClick={closePopup}
+                style={{
+                  background: "none",
+                  border: "none",
+                  fontSize: "20px",
+                  cursor: "pointer",
+                  color: "#333",
+                  position: "absolute", // Ensure it's positioned correctly
+                  top: "10px",
+                  right: "10px", // Places the button in the top-right corner
+                }}
+              >
+                ×
+              </button>
+              <p
+                style={{
+                  color: "#0052cc",
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                {" "}
+                In Order to Work this out you must{" "}
+              </p>
+              <p
+                style={{
+                  color: "#0052cc",
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                {" "}
+                Request or Demand for
+                <br />
+                Movies & TV Series by connecting to Telegram Channel.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Item  s Grid */}
         <div className="flex flex-wrap justify-center mt-4 text-bg font-extrabold">
           {renderItems()}
         </div>
@@ -495,7 +572,7 @@ function HomePage({ allData }) {
             </button>
           </div>
         )}
-                <style jsx>{`
+        <style jsx>{`
           .title {
             font-size: 1.25rem;
             font-weight: 900;
@@ -539,7 +616,7 @@ function HomePage({ allData }) {
     </>
   );
 }
-    
+
 export async function getStaticProps() {
   const sanitizeData = (data) =>
     data

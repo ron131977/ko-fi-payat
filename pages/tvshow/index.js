@@ -42,6 +42,21 @@ export default function tvshow({ tvshowData }) {
   const [currentPage, setCurrentPage] = React.useState(1);
 
   const totalPages = Math.ceil((tvshowData?.length || 0) / itemsPerPage);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  
+
+  // Automatically display popup after 2 minutes (120000ms)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 10000); // 30 seconds timer
+
+    return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
+  }, []);
+
+  const closePopup = () => {
+    setIsPopupVisible(false);
+  };
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -405,6 +420,86 @@ export default function tvshow({ tvshowData }) {
                 ></i>
               </p>
             </a>
+            {/* Popup overlay */}
+        {isPopupVisible && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 9999,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "white",
+                borderRadius: "10px",
+                maxWidth: "90%",
+                width: "400px",
+                boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+                animation: "fadeIn 0.3s ease-in-out",
+                padding: "20px",
+                textAlign: "center", // Ensures all content is center-aligned
+                position: "relative", // Important for positioning the close button
+              }}
+            >
+              <h2
+                className="animate-pulse"
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                  color: "red",
+                  margin: "0 0 10px", // Adds space below the heading
+                }}
+              >
+                Alert Message !!!
+              </h2>
+              <button
+                onClick={closePopup}
+                style={{
+                  background: "none",
+                  border: "none",
+                  fontSize: "20px",
+                  cursor: "pointer",
+                  color: "#333",
+                  position: "absolute", // Ensure it's positioned correctly
+                  top: "10px",
+                  right: "10px", // Places the button in the top-right corner
+                }}
+              >
+                ×
+              </button>
+              <p
+                style={{
+                  color: "#0052cc",
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                {" "}
+                In Order to Work this out you must{" "}
+              </p>
+              <p
+                style={{
+                  color: "#0052cc",
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                {" "}
+                Request or Demand for
+                <br />
+                Movies & TV Series by connecting to Telegram Channel.
+              </p>
+            </div>
+          </div>
+        )}
         {/* Pagination Controls */}
         <div className="flex items-center justify-center mt-4 gap-2">
           {/* Previous Button */}
