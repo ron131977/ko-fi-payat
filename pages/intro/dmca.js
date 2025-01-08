@@ -299,12 +299,12 @@ const dmca = () => {
               <p style={{ color: '#666', marginBottom: '24px' }}>
                 All trademarks, registered trademarks, product names, and
                 company names or logos appearing on the site are the property of
-                their respective owners. Filepuma complies with the federal
+                their respective owners. Buyonline Movies complies with the federal
                 Digital Millennium Copyright Act (DMCA) by responding to
                 credible notices of alleged infringement that adhere to the DMCA
                 and other applicable laws. As part of our response protocol, we
                 may take down or disable access to material hosted on the
-                Filepuma website that is claimed to be infringing. In such
+                Buyonline Movies website that is claimed to be infringing. In such
                 cases, we will earnestly attempt to establish contact with the
                 developer who posted the disputed material, allowing them the
                 opportunity to present a counter notification as outlined by the
@@ -315,7 +315,7 @@ const dmca = () => {
                 Counter-Notification, it is recommended to seek legal advice to
                 fully comprehend your rights and obligations under the DMCA and
                 other relevant laws. The subsequent notice guidelines are
-                designed to align with Filepuma's responsibilities under the
+                designed to align with Buyonline Movies's responsibilities under the
                 DMCA, particularly section 512(c), and do not constitute legal
                 counsel.
               </p>
@@ -329,7 +329,7 @@ const dmca = () => {
                 }}
               >
                 <li>
-                  To submit a notice of infringing material on Filepuma, kindly
+                  To submit a notice of infringing material on Buyonline Movies, kindly
                   provide a notification containing the ensuing details:
                 </li>
                 <li>

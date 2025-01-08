@@ -286,7 +286,7 @@ const Privacy = () => {
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
       <p className="font-bold mb-2">Buyonline Movies™ </p>
       <p className="text-gray-500 mb-6">
-      Buyonline Movies™ International(Buyonline Movies™) is committed to protecting your privacy. This Privacy Policy applies only to the Web Sites and applications published by Buyonline Movies™ International.
+      Buyonline Movies™ is committed to protecting your privacy. This Privacy Policy applies only to the Web Sites and applications published by Buyonline Movies™ International.
       </p>
       <p className="font-bold mb-2">Note: Use of Information</p>
       <p className="text-gray-500 mb-6">
