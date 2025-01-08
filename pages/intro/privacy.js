@@ -269,7 +269,7 @@ const Privacy = () => {
    
          <div className="container my-24 px-6 mx-auto">
          <a
-            href='https://t.me/watchmovietvshow/'
+            href='https://t.me/ondigitalbay/'
             target='_blank'
             rel='noopener noreferrer'
             className='telegram-link'

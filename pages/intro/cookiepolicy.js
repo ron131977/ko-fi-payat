@@ -284,7 +284,7 @@ const cookiepolicy = () => {
       <div style={containerStyle}>
         <section style={sectionStyle}>
         <a
-            href='https://t.me/watchmovietvshow/'
+            href='https://t.me/ondigitalbay/'
             target='_blank'
             rel='noopener noreferrer'
             className='telegram-link'

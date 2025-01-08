@@ -21,7 +21,7 @@ const uwatchfreeSchema = JSON.stringify([
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+    name: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
     url: "https://buyonlinemovies.vercel.app/",
     image: ["https://buyonlinemovies.vercel.app/favicon.ico"],
     logo: {
@@ -66,14 +66,14 @@ const rankMathSchema = JSON.stringify({
     {
       "@type": "Organization",
       "@id": "https://buyonlinemovies.vercel.app/#organization",
-      name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+      name: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
       url: "https://buyonlinemovies.vercel.app",
     },
     {
       "@type": "WebSite",
       "@id": "https://buyonlinemovies.vercel.app/#website",
       url: "https://buyonlinemovies.vercel.app",
-      name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+      name: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
       publisher: {
         "@type": "Organization",
         "@id": "https://buyonlinemovies.vercel.app/#organization",
@@ -108,7 +108,7 @@ const rankMathSchema = JSON.stringify({
           "@type": "Article",
           "@id": "https://buyonlinemovies.vercel.app/",
           url: "https://buyonlinemovies.vercel.app/",
-          headline: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+          headline: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
           datePublished: "2024-01-13T13:00:00+00:00",
           dateModified: "2024-01-13T13:13:00+00:00",
           author: {
@@ -127,7 +127,7 @@ const rankMathSchema = JSON.stringify({
           publisher: {
             "@type": "Organization",
             "@id": "https://buyonlinemovies.vercel.app/#organization",
-            name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+            name: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
             url: "https://buyonlinemovies.vercel.app",
           },
         },
@@ -135,7 +135,7 @@ const rankMathSchema = JSON.stringify({
           "@type": "Article",
           "@id": "https://buyonlinemovies.vercel.app/",
           url: "https://buyonlinemovies.vercel.app/",
-          headline: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+          headline: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
           datePublished: "2024-01-13T13:00:00+00:00",
           dateModified: "2024-01-13T13:13:00+00:00",
           author: {
@@ -154,7 +154,7 @@ const rankMathSchema = JSON.stringify({
           publisher: {
             "@type": "Organization",
             "@id": "https://buyonlinemovies.vercel.app/#organization",
-            name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+            name: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
             url: "https://buyonlinemovies.vercel.app",
           },
         },
@@ -162,7 +162,7 @@ const rankMathSchema = JSON.stringify({
           "@type": "Article",
           "@id": "https://buyonlinemovies.vercel.app/",
           url: "https://buyonlinemovies.vercel.app/",
-          headline: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD ",
+          headline: "DigitalBay Entertainment Hub™ - Digital Entertainment@ $1.00 USD ",
           datePublished: "2024-01-13T13:00:00+00:00",
           dateModified: "2024-01-13T13:13:00+00:00",
           author: {
@@ -264,7 +264,7 @@ function HomePage({ allData }) {
   return (
     <>
       <Head>
-        <title>DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD</title>
+        <title>DigitalBay Entertainment Hub™ - @ $1.00 USD</title>
 
         <link
           rel="sitemap"
@@ -301,9 +301,9 @@ function HomePage({ allData }) {
         />
          <meta
           property="og:keywords"
-          content="DigitalBay EntertainmentHub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters"
+          content="DigitalBay Entertainment Hub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters"
         />
-         <meta name="keywords" content="DigitalBay EntertainmentHub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters" />
+         <meta name="keywords" content="DigitalBay Entertainment Hub, movie, movies, video, videos, dvd, dvds, hd-dvd, blu-ray, buy movies, classic movies, comedy movies, horror movies, musicals, action movies, western movies, movie collectors, hard to find movies, movie posters" />
         <meta
           name="description"
           content="Explore the World of Digital Entertainment @ $1.00 USD – Books, Movies, Music, and More!"
@@ -314,12 +314,12 @@ function HomePage({ allData }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD "
+          content="DigitalBay Entertainment Hub™ - @ $1.00 USD "
         />
         <meta property="og:url" content="https://buyonlinemovies.vercel.app" />
         <meta
           property="og:site_name"
-          content="DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD "
+          content="DigitalBay Entertainment Hub™ - @ $1.00 USD "
         />
         <meta
           property="og:image"
@@ -330,7 +330,7 @@ function HomePage({ allData }) {
         <meta property="og:image:type" content="image/jpg" />
         <meta
           name="application-name"
-          content="DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD "
+          content="DigitalBay Entertainment Hub™ - @ $1.00 USD "
         />
         <meta
           property="article:modified_time"
@@ -383,10 +383,10 @@ function HomePage({ allData }) {
       <div className="container mx-auto mt-3 text-center">
       <div className="container">
           <div className="content">
-            <h1 className="title">DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD</h1>
+            <h1 className="title">DigitalBay Entertainment Hub™ - @ $1.00 USD</h1>
 
             <a
-              href="https://t.me/buyonlinemovies"
+              href="https://t.me/ondigitalbay"
               target="_blank"
               rel="noopener noreferrer"
               className="telegram-link"

@@ -431,7 +431,7 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
       <div style={styles.container}>
         {/* Pagination Button to Return to Main Section */}
         <a
-              href="https://t.me/buyonlinemovies"
+              href="https://t.me/ondigitalbay"
               target="_blank"
               rel="noopener noreferrer"
               className="telegram-link"

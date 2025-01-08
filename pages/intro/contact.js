@@ -253,7 +253,7 @@ const contact = () => {
           <div className='flex flex-wrap'>
             <div className='grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6'>
               <a
-                href='https://t.me/watchmovietvshow/'
+                href='https://t.me/ondigitalbay/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='telegram-link'

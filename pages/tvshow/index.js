@@ -382,7 +382,7 @@ export default function tvshow({ tvshowData }) {
       </div>
         <h1 style={styles.title}>DigitalBay EntertainmentHub™ Tv Show Section.</h1>
         <a
-              href="https://t.me/buyonlinemovies"
+              href="https://t.me/ondigitalbay"
               target="_blank"
               rel="noopener noreferrer"
               className="telegram-link"

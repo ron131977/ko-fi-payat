@@ -434,7 +434,7 @@ const moviesSchema = (moviesItem) =>
       <Script src=".../../../propler/ads2.js" defer />
       <div style={styles.container}>
       <a
-              href="https://t.me/buyonlinemovies"
+              href="https://t.me/ondigitalbay"
               target="_blank"
               rel="noopener noreferrer"
               className="telegram-link"

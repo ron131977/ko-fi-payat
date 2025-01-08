@@ -385,7 +385,7 @@ export default function adult({ adultData }) {
         <h1 style={styles.title}>DigitalBay EntertainmentHub™ Adult Section.</h1>
 
         <a
-              href="https://t.me/buyonlinemovies"
+              href="https://t.me/ondigitalbay"
               target="_blank"
               rel="noopener noreferrer"
               className="telegram-link"
