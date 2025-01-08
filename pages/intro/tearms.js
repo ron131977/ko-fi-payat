@@ -227,7 +227,7 @@ const Tearms = () => {
           />
          <meta
             name='keywords'
-            content='JustWatch 2024,JustWatch Free, Justwatch US,JustWatch Tv Shows,JustWatch Webseries,JustWatch Movies,JustWatch 2024,Netflix Free,MovieRulz,7MovieRulz 2024,5MovieRulz.'
+            content='digitalbay media hub, digitalbaymediahub 2025,moviefree, movie free 2025, free movie, free tv shows, watch movie online, free movies online, free movie streaming, movie free streaming, download free'
           />
        <meta
           property='description'
