@@ -1,0 +1,23 @@
+
+  .socialContainer {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      z-index: 999; 
+    }
+    
+    .shareButton {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .shareButton:hover {
+      transform: scale(1.3);
+    }
+
+
