@@ -234,7 +234,7 @@ const contact = () => {
         <meta name='twitter:card' content='summary_large_image' />
         <meta
           name='google-site-verification'
-          content='lV1TQ9qcLQiSO5BLBB4DmztyYJS6QLqDg'
+          content='RNN2teFhD-lV1TQ9qcLQiSO5BLBB4DmztyYJS6QLqDg'
         />
         <meta
           name='facebook-domain-verification'
