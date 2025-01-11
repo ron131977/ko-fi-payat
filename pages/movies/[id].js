@@ -64,7 +64,38 @@ export async function getStaticProps({ params }) {
   }
 }
 
-// const moviesSchema = (moviesItem) => 
+// Dynamic Schema Function
+const moviesSchema = (moviesItem) =>
+  JSON.stringify({
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    image: moviesItem.image,
+    name: moviesItem.name,
+    gtin12: moviesItem.suk,
+    productID: moviesItem.id,
+    sku: moviesItem.sku,
+    description: moviesItem.fullDescription,
+    brand: {
+      "@type": "Brand",
+      name: moviesItem.brand,
+    },
+    review: {
+      "@type": "Review",
+      author: {
+        "@type": "Thing",
+        name: "Staff",
+      },
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: moviesItem.priceCurrency,
+      price: moviesItem.price,
+      availability: "http://schema.org/InStock",
+      availabilityStarts: moviesItem.availabilityStarts,
+      url: moviesItem.siteurl, // Correct siteurl usage
+    },
+  });
+
 //   JSON.stringify({
 //     "@context": "https://schema.org",
 //     "@graph": [
@@ -166,7 +197,7 @@ export async function getStaticProps({ params }) {
 //   });
   
   export default function MoviesArticle({ moviesItem, videoSources = [] }) {
-  // const schemaData = moviesSchema(moviesItem); 
+  const schemaData = moviesSchema(moviesItem); 
   const router = useRouter();
 
   const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -433,54 +464,63 @@ export async function getStaticProps({ params }) {
       <Script src="../../../propler/ads.js" defer />
       <Script src=".../../../propler/ads2.js" defer />
       <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.Aec_ProductPageInfo = {
-              "id": "${moviesItem.id}",
-              "sku": "${moviesItem.sku}",
-              "name": "${moviesItem.name}",
-              "image": "${moviesItem.image}",
-              "description": "${moviesItem.description}",
-              "brand": "${moviesItem.brand}",
-              "priceCurrency": "${moviesItem.priceCurrency}",
-              "price": "${moviesItem.price}",
-              "url": "${moviesItem.url}"
-            };
-          `,
-        }}
-      />
-      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "http://schema.org/",
-            "@type": "Product",
-            image: moviesItem.image,
-            name: moviesItem.name,
-            gtin12: moviesItem.id,
-            productID: moviesItem.id,
-            sku: moviesItem.sku,
-            description: moviesItem.fullDescription,
-            brand: moviesItem.brand,
-            color: moviesItem.color || "",
-            review: {
-              "@type": "Review",
-              author: "Staff",
-              name: "",
-            },
-            offers: {
-              "@type": "Offer",
-              priceCurrency: moviesItem.priceCurrency,
-              price: moviesItem.price,
-              availability: "http://schema.org/InStock",
-              availabilityStarts: moviesItem.availabilityStarts,
-              availability_date: moviesItem.availabilityDate || "",
-              url: moviesItem.url,
-            },
-          }),
+          __html: moviesSchema(moviesItem),
         }}
       />
+  {/* <script
+  type="text/javascript"
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.Aec_ProductPageInfo = {
+        "id": "${moviesItem.id}",
+        "sku": "${moviesItem.sku}",
+        "name": "${moviesItem.name}",
+        "image": "${moviesItem.image}",
+        "description": "${moviesItem.description}",
+        "brand": "${moviesItem.brand}",
+        "priceCurrency": "${moviesItem.priceCurrency}",
+        "price": "${moviesItem.price}",
+        "url": "${moviesItem.siteurl}"
+      };
+    `,
+  }}
+/> */}
+{/* <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "http://schema.org/",
+      "@type": "Product",
+      image: moviesItem.image,
+      name: moviesItem.name,
+      gtin12: moviesItem.id,
+      productID: moviesItem.id,
+      sku: moviesItem.sku,
+      description: moviesItem.fullDescription,
+      brand: {
+        "@type": "Brand",
+        name: moviesItem.brand,
+      },
+      review: {
+        "@type": "Review",
+        author: {
+          "@type": "Thing",
+          name: "Staff",
+        },
+      },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: moviesItem.priceCurrency,
+        price: moviesItem.price,
+        availability: "http://schema.org/InStock",
+        availabilityStarts: moviesItem.availabilityStarts,
+        url: moviesItem.siteurl, // Correct usage here
+      },
+    }),
+  }}
+/> */}
       <div style={styles.container}>
 
       <a

@@ -50,7 +50,7 @@
         "brand": "Vel Curve",
         "priceCurrency": "USD",
         "price": "1.00",
-        "url": "https:/buyonlinemovies.vercel.app/movies/movie-uranus-2324-2024",
+       
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "color": ""
@@ -104,8 +104,7 @@
         "fullDescription": "After raising an unnervingly talented spider in secret, 12-year-old Charlotte must face the facts about her pet-and fight for her family's survival-when the once-charming creature rapidly transforms into a giant, flesh-eating monster.",
         "brand": "Cornerstone Films",
         "priceCurrency": "USD",
-        "price": "1.00",
-        "url": "https:/buyonlinemovies.vercel.app/movies/movie-sting-2024",
+        "price": "1.00",    
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "color": ""
