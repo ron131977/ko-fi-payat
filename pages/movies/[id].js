@@ -197,7 +197,7 @@ const moviesSchema = (moviesItem) =>
 //   });
   
   export default function MoviesArticle({ moviesItem, videoSources = [] }) {
-  const schemaData = moviesSchema(moviesItem); 
+  const moviesSchema = moviesSchema(moviesItem); 
   const router = useRouter();
 
   const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -396,7 +396,8 @@ const moviesSchema = (moviesItem) =>
         />
         <link rel="canonical" href={moviesItem.siteurl} />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" /> */}
+        <meta property="og:type" content="movie"/>
         <meta
           property="og:title"
           content=" DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD "
@@ -455,10 +456,11 @@ const moviesSchema = (moviesItem) =>
           content="dm3bs67ukdegz9qik"
         />
         <meta name="monetag" content="98a412cb5612b9188cd76b9744304b6c" />
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: moviesSchema }}
-        /> */}
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{  __html: moviesSchema(moviesItem),
+        }}
+      />
       </Head>
       <SocialSharing />
       <Script src="../../../propler/ads.js" defer />
@@ -481,12 +483,7 @@ const moviesSchema = (moviesItem) =>
           `,
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: moviesSchema(moviesItem),
-        }}
-      />
+   
   {/* <script
   type="text/javascript"
   dangerouslySetInnerHTML={{

@@ -111,8 +111,6 @@
         "color": ""
     },
     {
-        "id": "watch-smile-2-2024",
-        "group": "Dr Trailer",
         "source": "0HY6QFlBzUY",
         "badge": " [ Movie ] ",
         "year": " October 18, 2024",
@@ -130,8 +128,9 @@
             "reviewCount": "13"
         },
         "title": "Watch Smile 2 Movie (2024)",
-        "name": "Movie Smile 2 (2024)",
+      
         "image": "https://res.cloudinary.com/db36kfuq3/image/upload/c_scale,h_750,w_500/v1730075315/Smile.2.2024_whympz.webp",
+        "description": "About to embark on a world tour, global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events. Overwhelmed by the escalating horrors and the pressures of fame, Skye is forced to face her past.",
         "synopsis": " Watch Smile 2 (2024) Here to Download Smile 2 Full movies Download in HD 1080p. About to embark on a world tour, global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events. Overwhelmed by the escalating horrors and the pressures of fame, Skye is forced to face her past.",
         "genre": [
             "Horror, ",
@@ -166,20 +165,20 @@
             "Miles Gutierrez-Riley, ",
             "Peter Jacobson."
         ],
-        "actor1": "Naomi Scott.",
-        "actor2": "Rosemarie DeWitt.",
-        "actor3": "Lukas Gage.",
-        "actor4": "Miles Gutierrez-Riley.",
-        "actor5": "Peter Jacobson. ",
-        "directorimg": "https://imagevars.gulfnews.com/2024/10/16/Parker-Finn-_192959a0608_medium.jpg",
-        "actor1img": " https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/607355_v9_bd.jpg",
-        "actor2img": " https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/357228_v9_bc.jpg",
-        "actor3img": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMuJcKBHzhtJi3i3wWOc1z6Vjkypt71WGH2A&s",
-        "actor4img": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9_MbP7I87WIgEFhj9EBIclAmz1c13bN7Sw&s",
-        "actor5img": " https://resizing.flixster.com/qfRz2PZ1K7Vq_Werd8Hwn3r87Qg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/168500_v9_bc.jpg"
+        "id": "MS2-2024",
+        "sku": "HXA9F82XWCBYE",
+        "name": "Movie Smile 2 (2024)",     
+        "fullDescription": "About to embark on a world tour, global pop sensation Skye Riley begins experiencing increasingly terrifying and inexplicable events. Overwhelmed by the escalating horrors and the pressures of fame, Skye is forced to face her past.",
+        "brand": "Amazon Prime Video",
+        "priceCurrency": "USD",
+        "price": "1.00",    
+        "availabilityStarts": "2025-01-01",
+        "availabilityDate": "",
+        "url": "/movies/movie-sting-2024",
+        "color": ""
     },
     {
-        "id": "watch-the-substance-2024",
+    
         "group": "Dr Trailer",
         "source": "LNlrGhBpYjc",
         "badge": " [ Movie ] ",
@@ -198,8 +197,9 @@
             "reviewCount": "13"
         },
         "title": "Watch The Substance Movie (2024)",
-        "name": "Movie The Substance (2024)",
+      
         "image": "https://res.cloudinary.com/db36kfuq3/image/upload/c_scale,h_750,w_500/v1730075313/The.Substance.2024_mpc2dg.webp",
+        "description": "A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creates a younger, better version of herself.",
         "synopsis": " Watch The Substance (2024) Here to Download The Substance Full movies Download in HD 1080p. A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creates a younger, better version of herself.",
         "genre": [
             "Horror, ",
@@ -234,20 +234,20 @@
             "Gore Abrams, ",
             "Oscar Lesage."
         ],
-        "actor1": "Demi Moore.",
-        "actor2": "Margaret Qualley.",
-        "actor3": "Dennis Quaid.",
-        "actor4": "Gore Abrams.",
-        "actor5": "Oscar Lesage. ",
-        "directorimg": "https://images.mubicdn.net/images/cast_member/519528/cache-258310-1715094388/image-w856.jpg",
-        "actor1img": " https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/1194_v9_bb.jpg",
-        "actor2img": " https://cdn.britannica.com/39/261739-050-2B81752C/actress-margaret-qualley-at-my-salinger-year-film-press-conference-at-the-berlin-film-festival-february-20-2020.jpg",
-        "actor3img": " https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/1398_v9_bc.jpg",
-        "actor4img": " https://media.themoviedb.org/t/p/w500/bKMTqbl0FYlzIC6aTMKQZNAhhXK.jpg",
-        "actor5img": " https://images.mubicdn.net/images/cast_member/742675/cache-634184-1610948227/image-w856.jpg"
+        "id": "MTS-2024",
+        "sku": "BZJM5RMNFNHBN",
+        "name": "Movie The Substance (2024)", 
+        "fullDescription": "A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creates a younger, better version of herself.",
+        "brand": "Amazon Prime Video",
+        "priceCurrency": "USD",
+        "price": "1.00",    
+        "availabilityStarts": "2025-01-01",
+        "availabilityDate": "",
+        "url": "/movies/movie-sting-2024",
+        "color": ""
     },
     {
-        "id": "watch-canary-black-2024",
+       
         "group": "Dr Trailer",
         "source": "tSaw2HTVSsA",
         "badge": " [ Movie ] ",
@@ -266,8 +266,9 @@
             "reviewCount": "13"
         },
         "title": "Watch Canary Black Movie (2024)",
-        "name": "Movie Canary Black (2024)",
+    
         "image": "https://res.cloudinary.com/db36kfuq3/image/upload/c_scale,h_750,w_500/v1730075345/Canary_Black_2024_iiincc.webp",
+        "description": "It follows Avery Graves as she is blackmailed by terrorists into betraying her own country to save her kidnapped husband.",
         "synopsis": " Watch Canary Black (2024) Here to Download Canary Black Full movies Download in HD 1080p. It follows Avery Graves as she is blackmailed by terrorists into betraying her own country to save her kidnapped husband.",
         "genre": [
             "Action, ",
@@ -300,16 +301,16 @@
             "Jaz Hutchins, ",
             "Goran Kostic."
         ],
-        "actor1": "Kate Beckinsale.",
-        "actor2": "Rupert Friend.",
-        "actor3": "Ray Stevenson.",
-        "actor4": "Jaz Hutchins.",
-        "actor5": "Goran Kostic. ",
-        "directorimg": "https://resizing.flixster.com/wH-PqD4fyURleaTIhU8vjddqkQc=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/460038_v9_ba.jpg",
-        "actor1img": " https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/75538_v9_bb.jpg",
-        "actor2img": " https://resizing.flixster.com/GFfHNIaOiAjL5uzvKhwGubTAHOE=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/487066_v9_bd.jpg",
-        "actor3img": " https://m.media-amazon.com/images/M/MV5BZDg3ZjMxYWEtNzAwNy00MjczLWE2OTItZWNhMjM3NmRlNTRmXkEyXkFqcGc@._V1_.jpg",
-        "actor4img": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_le_k3yOOSXLBWQc0NNYogOg8sQ663Rm4w&s",
-        "actor5img": " https://is1-ssl.mzstatic.com/image/thumb/haFRJvmg7dck8IsSwePcHg/1200x675mf.jpg"
+        "id": "MCB-2024",
+        "sku": "39EZG5K65HGLS",
+        "name": "Movie Canary Black (2024)",
+        "fullDescription": "It follows Avery Graves as she is blackmailed by terrorists into betraying her own country to save her kidnapped husband.",
+        "brand": "Amazon Prime Video",
+        "priceCurrency": "USD",
+        "price": "1.00",    
+        "availabilityStarts": "2025-01-01",
+        "availabilityDate": "",
+        "url": "/movies/movie-canary-black-2024",
+        "color": ""
     }
 ]
