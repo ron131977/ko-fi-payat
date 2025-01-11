@@ -40,7 +40,7 @@ function Application({ Component, pageProps }) {
       
       <div className="center">
         {/* Google Analytics */}
-        <GoogleAnalytics measurementId="G-LEN3ZV9LQM" />
+        <GoogleAnalytics measurementId="G-YE22ZXLZTP" />
         
         <PageTransition>
           {/* Header */}
