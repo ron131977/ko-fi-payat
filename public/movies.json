@@ -50,7 +50,7 @@
         "brand": "Vel Curve",
         "priceCurrency": "USD",
         "price": "1.00",
-       
+        "url": "/movies/movie-uranus-2324-2024",
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "color": ""
@@ -107,6 +107,7 @@
         "price": "1.00",    
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
+        "url": "/movies/movie-sting-2024",
         "color": ""
     },
     {

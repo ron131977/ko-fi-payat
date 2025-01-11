@@ -65,13 +65,13 @@ export async function getStaticProps({ params }) {
 }
 
 // Dynamic Schema Function
-const moviesSchema = (moviesItem) =>
+const moviesSchema = (moviesItem) => 
   JSON.stringify({
     "@context": "http://schema.org/",
     "@type": "Product",
     image: moviesItem.image,
     name: moviesItem.name,
-    gtin12: moviesItem.suk,
+    gtin12: moviesItem.id,
     productID: moviesItem.id,
     sku: moviesItem.sku,
     description: moviesItem.fullDescription,
@@ -92,7 +92,7 @@ const moviesSchema = (moviesItem) =>
       price: moviesItem.price,
       availability: "http://schema.org/InStock",
       availabilityStarts: moviesItem.availabilityStarts,
-      url: moviesItem.siteurl, // Correct siteurl usage
+      url: `https://buyonlinemovies.vercel.app${moviesItem.url}`, // Correct URL construction
     },
   });
 
@@ -463,6 +463,24 @@ const moviesSchema = (moviesItem) =>
       <SocialSharing />
       <Script src="../../../propler/ads.js" defer />
       <Script src=".../../../propler/ads2.js" defer />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.Aec_ProductPageInfo = {
+              "id": "${moviesItem.id}",
+              "sku": "${moviesItem.sku}",
+              "name": "${moviesItem.name}",
+              "image": "${moviesItem.image}",
+              "description": "${moviesItem.description}",
+              "brand": "${moviesItem.brand}",
+              "priceCurrency": "${moviesItem.priceCurrency}",
+              "price": "${moviesItem.price}",
+              "url": "${moviesItem.siteurl}"
+            };
+          `,
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
