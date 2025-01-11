@@ -197,7 +197,7 @@ const moviesSchema = (moviesItem) =>
 //   });
   
   export default function MoviesArticle({ moviesItem, videoSources = [] }) {
-  const moviesSchema = moviesSchema(moviesItem); 
+  const moviesSchemaJson  = moviesSchema(moviesItem); 
   const router = useRouter();
 
   const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -458,7 +458,8 @@ const moviesSchema = (moviesItem) =>
         <meta name="monetag" content="98a412cb5612b9188cd76b9744304b6c" />
         <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{  __html: moviesSchema(moviesItem),
+        dangerouslySetInnerHTML={{
+          __html: moviesSchemaJson,  // Use the correct variable here
         }}
       />
       </Head>

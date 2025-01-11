@@ -64,109 +64,42 @@ export async function getStaticProps({ params }) {
   }
 }
 
-const tvshowSchema = (tvshowItem) =>
+
+  
+// Dynamic Schema Function
+const generateTvshowSchema = (tvshowItem) =>
   JSON.stringify({
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${tvshowItem.siteurl}/#website`,
-        url: tvshowItem.siteurl,
-        name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-        publisher: {
-          "@type": "Organization",
-          "@id": "https:/buyonlinemovies.vercel.app/#organization",
-        },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "https:/buyonlinemovies.vercel.app/?s={search_term_string}",
-          "query-input": "required name=search_term_string",
-        },
-        inLanguage: "en-US",
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    image: tvshowItem.image,
+    name: tvshowItem.name,
+    gtin12: tvshowItem.id,
+    productID: tvshowItem.id,
+    sku: tvshowItem.sku,
+    description: tvshowItem.fullDescription,
+    brand: {
+      "@type": "Brand",
+      name: tvshowItem.brand,
+    },
+    review: {
+      "@type": "Review",
+      author: {
+        "@type": "Thing",
+        name: "Staff",
       },
-      {
-        "@type": "WebPage",
-        "@id": `${tvshowItem.siteurl}/#webpage`,
-        url: tvshowItem.siteurl,
-        name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-        isPartOf: {
-          "@id": "https:/buyonlinemovies.vercel.app/#website",
-        },
-        primaryImageOfPage: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        },
-        image: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        },
-        thumbnailUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        datePublished: tvshowItem.datePublished,
-        dateModified: tvshowItem.dateModified,
-        breadcrumb: {
-          "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb",
-        },
-        inLanguage: "en-US",
-        potentialAction: [
-          {
-            "@type": "ReadAction",
-            target: [tvshowItem.siteurl],
-          },
-        ],
-      },
-      {
-        "@type": "Article",
-        "@id": `${tvshowItem.siteurl}/#article`,
-        url: tvshowItem.siteurl,
-        headline: tvshowItem.title,
-        datePublished: tvshowItem.datePublished,
-        dateModified: tvshowItem.dateModified,
-        author: {
-          "@type": "Person",
-          "@id": "https://gravatar.com/drtrailer2022",
-          name: "Dr Trailer",
-          url: "https://gravatar.com/drtrailer2022",
-          image: {
-            "@type": "ImageObject",
-            "@id": "https://gravatar.com/drtrailer2022",
-            url: "https://gravatar.com/drtrailer2022",
-            caption: "Dr Trailer",
-            inLanguage: "en-US",
-          },
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": "https:/buyonlinemovies.vercel.app/#organization",
-          name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-          url: "https:/buyonlinemovies.vercel.app",
-        },
-        image: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        },
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        url: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        contentUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        width: 1280,
-        height: 720,
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https:/buyonlinemovies.vercel.app/",
-          },
-        ],
-      },
-    ],
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: tvshowItem.priceCurrency,
+      price: tvshowItem.price,
+      availability: "http://schema.org/InStock",
+      availabilityStarts: tvshowItem.availabilityStarts,
+      url: `https://buyonlinemovies.vercel.app${tvshowItem.url}`, // Correct URL construction
+    },
   });
 
 export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
-  const schemaData = tvshowSchema(tvshowItem);
+  const tvshowSchema = generateTvshowSchema(tvshowItem);
   const router = useRouter();
 
   const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -361,7 +294,8 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
         />
         <link rel="canonical" href={tvshowItem.siteurl} />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" /> */}
+        <meta property="og:type" content="tv_show"/>
         <meta
           property="og:title"
           content=" DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD "
@@ -422,12 +356,30 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
         <meta name="monetag" content="98a412cb5612b9188cd76b9744304b6c" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: schemaData }}
+          dangerouslySetInnerHTML={{ __html: tvshowSchema }}
         />
       </Head>
       <SocialSharing />
       <Script src="../../../propler/ads.js" defer />
       <Script src=".../../../propler/ads2.js" defer />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.Aec_ProductPageInfo = {
+              "id": "${tvshowItem.id}",
+              "sku": "${tvshowItem.sku}",
+              "name": "${tvshowItem.name}",
+              "image": "${tvshowItem.image}",
+              "description": "${tvshowItem.description}",
+              "brand": "${tvshowItem.brand}",
+              "priceCurrency": "${tvshowItem.priceCurrency}",
+              "price": "${tvshowItem.price}",
+              "url": "${tvshowItem.siteurl}"
+            };
+          `,
+        }}
+      />
       <div style={styles.container}>
         {/* Pagination Button to Return to Main Section */}
         <a

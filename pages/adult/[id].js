@@ -39,105 +39,36 @@ export async function getStaticPaths() {
   }
 }
 
-const NewsSchema = (adultItem) =>
+// Dynamic Schema Function
+const generateAdultSchema = (adultItem) => 
   JSON.stringify({
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${adultItem.siteurl}/#website`,
-        url: adultItem.siteurl,
-        name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-        publisher: {
-          "@type": "Organization",
-          "@id": "https:/buyonlinemovies.vercel.app/#organization",
-        },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "https:/buyonlinemovies.vercel.app/?s={search_term_string}",
-          "query-input": "required name=search_term_string",
-        },
-        inLanguage: "en-US",
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    image: adultItem.image,
+    name: adultItem.name,
+    gtin12: adultItem.id,
+    productID: adultItem.id,
+    sku: adultItem.sku,
+    description: adultItem.fullDescription,
+    brand: {
+      "@type": "Brand",
+      name: adultItem.brand,
+    },
+    review: {
+      "@type": "Review",
+      author: {
+        "@type": "Thing",
+        name: "Staff",
       },
-      {
-        "@type": "WebPage",
-        "@id": `${adultItem.siteurl}/#webpage`,
-        url: adultItem.siteurl,
-        name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-        isPartOf: {
-          "@id": "https:/buyonlinemovies.vercel.app/#website",
-        },
-        primaryImageOfPage: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        },
-        image: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        },
-        thumbnailUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        datePublished: adultItem.datePublished,
-        dateModified: adultItem.dateModified,
-        breadcrumb: {
-          "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb",
-        },
-        inLanguage: "en-US",
-        potentialAction: [
-          {
-            "@type": "ReadAction",
-            target: [adultItem.siteurl],
-          },
-        ],
-      },
-      {
-        "@type": "Article",
-        "@id": `${adultItem.siteurl}/#article`,
-        url: adultItem.siteurl,
-        headline: adultItem.title,
-        datePublished: adultItem.datePublished,
-        dateModified: adultItem.dateModified,
-        author: {
-          "@type": "Person",
-          "@id": "https://gravatar.com/drtrailer2022",
-          name: "Dr Trailer",
-          url: "https://gravatar.com/drtrailer2022",
-          image: {
-            "@type": "ImageObject",
-            "@id": "https://gravatar.com/drtrailer2022",
-            url: "https://gravatar.com/drtrailer2022",
-            caption: "Dr Trailer",
-            inLanguage: "en-US",
-          },
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": "https:/buyonlinemovies.vercel.app/#organization",
-          name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-          url: "https:/buyonlinemovies.vercel.app",
-        },
-        image: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        },
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        url: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        contentUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        width: 1280,
-        height: 720,
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https:/buyonlinemovies.vercel.app/",
-          },
-        ],
-      },
-    ],
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: adultItem.priceCurrency,
+      price: adultItem.price,
+      availability: "http://schema.org/InStock",
+      availabilityStarts: adultItem.availabilityStarts,
+      url: `https://buyonlinemovies.vercel.app${adultItem.url}`, // Correct URL construction
+    },
   });
 
 // Fetching specific adult data based on the dynamic slug (id)
@@ -169,7 +100,7 @@ export async function getStaticProps({ params }) {
 
 export default function adultArticle({ adultItem, videoSources = [] }) {
   // const schemaData = NewsSchema(adultItem);
-  const schemaData = NewsSchema(adultItem);
+  const adultSchemaJson = generateAdultSchema (adultItem);
   const router = useRouter();
  
    const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -363,7 +294,8 @@ export default function adultArticle({ adultItem, videoSources = [] }) {
         />
         <link rel="canonical" href={adultItem.siteurl} />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" /> */}
+        <meta property="og:type" content="movie"/>
         <meta
           property="og:title"
           content=" DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD "
@@ -423,14 +355,34 @@ export default function adultArticle({ adultItem, videoSources = [] }) {
         />
         <meta name="monetag" content="98a412cb5612b9188cd76b9744304b6c" />
         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: schemaData }}
-        />
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: adultSchemaJson,  // Use the correct variable here
+        }}
+      />
       </Head>
       <SocialSharing />
       <AdultSkipAds />
       <Script src="../../../propler/ads.js" defer />
       <Script src="../../../propler/ads2.js" defer />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.Aec_ProductPageInfo = {
+              "id": "${adultItem.id}",
+              "sku": "${adultItem.sku}",
+              "name": "${adultItem.name}",
+              "image": "${adultItem.image}",
+              "description": "${adultItem.description}",
+              "brand": "${adultItem.brand}",
+              "priceCurrency": "${adultItem.priceCurrency}",
+              "price": "${adultItem.price}",
+              "url": "${adultItem.siteurl}"
+            };
+          `,
+        }}
+      />
       <div style={styles.container}>
       <a
               href="https://t.me/ondigitalbay"
