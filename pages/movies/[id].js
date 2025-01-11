@@ -64,109 +64,109 @@ export async function getStaticProps({ params }) {
   }
 }
 
-const moviesSchema = (moviesItem) => 
-  JSON.stringify({
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${moviesItem.siteurl}/#website`,
-        url: moviesItem.siteurl,
-        name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-        publisher: {
-          "@type": "Organization",
-          "@id": "https:/buyonlinemovies.vercel.app/#organization"
-        },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "https:/buyonlinemovies.vercel.app/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        },
-        inLanguage: "en-US"
-      },
-      {
-        "@type": "WebPage",
-        "@id": `${moviesItem.siteurl}/#webpage`,
-        url: moviesItem.siteurl,
-        name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-        isPartOf: {
-          "@id": "https:/buyonlinemovies.vercel.app/#website"
-        },
-        primaryImageOfPage: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage"
-        },
-        image: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage"
-        },
-        thumbnailUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        datePublished: moviesItem.datePublished,
-        dateModified: moviesItem.dateModified,
-        breadcrumb: {
-          "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb"
-        },
-        inLanguage: "en-US",
-        potentialAction: [
-          {
-            "@type": "ReadAction",
-            target: [moviesItem.siteurl]
-          }
-        ]
-      },
-      {
-        "@type": "Article",
-        "@id": `${moviesItem.siteurl}/#article`,
-        url: moviesItem.siteurl,
-        headline: moviesItem.title,
-        datePublished: moviesItem.datePublished,
-        dateModified: moviesItem.dateModified,
-        author: {
-          "@type": "Person",
-          "@id": "https://gravatar.com/drtrailer2022",
-          name: "Dr Trailer",
-          url: "https://gravatar.com/drtrailer2022",
-          image: {
-            "@type": "ImageObject",
-            "@id": "https://gravatar.com/drtrailer2022",
-            url: "https://gravatar.com/drtrailer2022",
-            caption: "Dr Trailer",
-            inLanguage: "en-US"
-          }
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": "https:/buyonlinemovies.vercel.app/#organization",
-          name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
-          url: "https:/buyonlinemovies.vercel.app"
-        },
-        image: {
-          "@id": "https:/buyonlinemovies.vercel.app/#primaryimage"
-        }
-      },
-      {
-        "@type": "ImageObject",
-        "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
-        url: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        contentUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
-        width: 1280,
-        height: 720
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https:/buyonlinemovies.vercel.app/"
-          }
-        ]
-      }
-    ]
-  });
+// const moviesSchema = (moviesItem) => 
+//   JSON.stringify({
+//     "@context": "https://schema.org",
+//     "@graph": [
+//       {
+//         "@type": "WebSite",
+//         "@id": `${moviesItem.siteurl}/#website`,
+//         url: moviesItem.siteurl,
+//         name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
+//         publisher: {
+//           "@type": "Organization",
+//           "@id": "https:/buyonlinemovies.vercel.app/#organization"
+//         },
+//         potentialAction: {
+//           "@type": "SearchAction",
+//           target: "https:/buyonlinemovies.vercel.app/?s={search_term_string}",
+//           "query-input": "required name=search_term_string"
+//         },
+//         inLanguage: "en-US"
+//       },
+//       {
+//         "@type": "WebPage",
+//         "@id": `${moviesItem.siteurl}/#webpage`,
+//         url: moviesItem.siteurl,
+//         name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
+//         isPartOf: {
+//           "@id": "https:/buyonlinemovies.vercel.app/#website"
+//         },
+//         primaryImageOfPage: {
+//           "@id": "https:/buyonlinemovies.vercel.app/#primaryimage"
+//         },
+//         image: {
+//           "@id": "https:/buyonlinemovies.vercel.app/#primaryimage"
+//         },
+//         thumbnailUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
+//         datePublished: moviesItem.datePublished,
+//         dateModified: moviesItem.dateModified,
+//         breadcrumb: {
+//           "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb"
+//         },
+//         inLanguage: "en-US",
+//         potentialAction: [
+//           {
+//             "@type": "ReadAction",
+//             target: [moviesItem.siteurl]
+//           }
+//         ]
+//       },
+//       {
+//         "@type": "Article",
+//         "@id": `${moviesItem.siteurl}/#article`,
+//         url: moviesItem.siteurl,
+//         headline: moviesItem.title,
+//         datePublished: moviesItem.datePublished,
+//         dateModified: moviesItem.dateModified,
+//         author: {
+//           "@type": "Person",
+//           "@id": "https://gravatar.com/drtrailer2022",
+//           name: "Dr Trailer",
+//           url: "https://gravatar.com/drtrailer2022",
+//           image: {
+//             "@type": "ImageObject",
+//             "@id": "https://gravatar.com/drtrailer2022",
+//             url: "https://gravatar.com/drtrailer2022",
+//             caption: "Dr Trailer",
+//             inLanguage: "en-US"
+//           }
+//         },
+//         publisher: {
+//           "@type": "Organization",
+//           "@id": "https:/buyonlinemovies.vercel.app/#organization",
+//           name: "DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD",
+//           url: "https:/buyonlinemovies.vercel.app"
+//         },
+//         image: {
+//           "@id": "https:/buyonlinemovies.vercel.app/#primaryimage"
+//         }
+//       },
+//       {
+//         "@type": "ImageObject",
+//         "@id": "https:/buyonlinemovies.vercel.app/#primaryimage",
+//         url: "https:/buyonlinemovies.vercel.app/og_image.jpg",
+//         contentUrl: "https:/buyonlinemovies.vercel.app/og_image.jpg",
+//         width: 1280,
+//         height: 720
+//       },
+//       {
+//         "@type": "BreadcrumbList",
+//         "@id": "https:/buyonlinemovies.vercel.app/#breadcrumb",
+//         itemListElement: [
+//           {
+//             "@type": "ListItem",
+//             position: 1,
+//             name: "Home",
+//             item: "https:/buyonlinemovies.vercel.app/"
+//           }
+//         ]
+//       }
+//     ]
+//   });
   
   export default function MoviesArticle({ moviesItem, videoSources = [] }) {
-  const schemaData = moviesSchema(moviesItem); 
+  // const schemaData = moviesSchema(moviesItem); 
   const router = useRouter();
 
   const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -424,15 +424,65 @@ const moviesSchema = (moviesItem) =>
           content="dm3bs67ukdegz9qik"
         />
         <meta name="monetag" content="98a412cb5612b9188cd76b9744304b6c" />
-        <script
+        {/* <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: schemaData }}
-        />
+          dangerouslySetInnerHTML={{ __html: moviesSchema }}
+        /> */}
       </Head>
       <SocialSharing />
       <Script src="../../../propler/ads.js" defer />
       <Script src=".../../../propler/ads2.js" defer />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.Aec_ProductPageInfo = {
+              "id": "${moviesItem.id}",
+              "sku": "${moviesItem.sku}",
+              "name": "${moviesItem.name}",
+              "image": "${moviesItem.image}",
+              "description": "${moviesItem.description}",
+              "brand": "${moviesItem.brand}",
+              "priceCurrency": "${moviesItem.priceCurrency}",
+              "price": "${moviesItem.price}",
+              "url": "${moviesItem.url}"
+            };
+          `,
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            image: moviesItem.image,
+            name: moviesItem.name,
+            gtin12: moviesItem.id,
+            productID: moviesItem.id,
+            sku: moviesItem.sku,
+            description: moviesItem.fullDescription,
+            brand: moviesItem.brand,
+            color: moviesItem.color || "",
+            review: {
+              "@type": "Review",
+              author: "Staff",
+              name: "",
+            },
+            offers: {
+              "@type": "Offer",
+              priceCurrency: moviesItem.priceCurrency,
+              price: moviesItem.price,
+              availability: "http://schema.org/InStock",
+              availabilityStarts: moviesItem.availabilityStarts,
+              availability_date: moviesItem.availabilityDate || "",
+              url: moviesItem.url,
+            },
+          }),
+        }}
+      />
       <div style={styles.container}>
+
       <a
               href="https://t.me/ondigitalbay"
               target="_blank"
