@@ -495,7 +495,20 @@ const [isPopupVisible, setIsPopupVisible] = useState(false);
                 {" "}
                 Request or Demand for
                 <br />
-                Movies & TV Series by connecting to Telegram Channel.
+                Movies & TV Series by connecting to  <a
+              href="https://t.me/ondigitalbay"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="telegram-link animate-pulse"
+              style={{
+                display: "block",
+                textAlign: "center",
+                color: "#FF0000",
+                textDecoration: "none", // Remove underline
+              }}
+            >
+                Telegram Channel.
+                </a>
               </p>
             </div>
           </div>
