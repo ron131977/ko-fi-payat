@@ -266,7 +266,7 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
   return (
     <>
       <Head>
-        <title>World tvshow 24™ – {tvshowItem.title || "Default Title"}</title>
+        <title>DigitalBay EntertainmentHub™ – {tvshowItem.title || "Default Title"}</title>
 
         <link
           rel="sitemap"
