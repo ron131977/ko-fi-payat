@@ -98,8 +98,30 @@ const generateTvshowSchema = (tvshowItem) =>
     },
   });
 
+  const generateVideoSchema = (tvshowItem) =>
+    JSON.stringify({
+      "@context": "http://schema.org/",
+      "@type": "VideoObject",
+      name: tvshowItem.title,
+      description: tvshowItem.description,
+      thumbnailUrl: tvshowItem.image1, // Ensure a valid URL
+      uploadDate: tvshowItem.uploadDate, // Proper ISO 8601 format with timezone
+      contentUrl: tvshowItem.contentUrl, // Direct link to the video
+      embedUrl: tvshowItem.embedUrl, // Embed URL for the video
+      duration: tvshowItem.duration, // ISO 8601 duration format
+      publisher: {
+        "@type": "Organization",
+        name: tvshowItem.publisherName,
+        logo: {
+          "@type": "ImageObject",
+           url: `https://buyonlinemovies.vercel.app${tvshowItem.publisherLogo}`, // Correct URL construction
+        },
+      },
+    });
+
 export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
   const tvshowSchema = generateTvshowSchema(tvshowItem);
+  const videoSchema = generateVideoSchema(tvshowItem);
   const router = useRouter();
 
   const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -358,6 +380,12 @@ export default function tvshowArticle({ tvshowItem, videoSources = [] }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: tvshowSchema }}
         />
+          <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: videoSchema,
+        }}
+      />
       </Head>
       <SocialSharing />
       <Script src="../../../propler/ads.js" defer />

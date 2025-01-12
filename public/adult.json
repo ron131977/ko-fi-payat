@@ -61,7 +61,13 @@
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "url": "/adult/watch-las-ilusyunadas-2025",
-        "color": ""
+        "color": "",
+        "uploadDate": "2025-01-01T00:00:00Z", 
+        "duration": "PT1M24S", 
+        "contentUrl": "https://www.youtube.com/watch?v=ij4P62MGVlQ",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ij4P62MGVlQ",
+        "publisherName": "DigitalBay EntertainmentHub™",
+        "publisherLogo": "/android-chrome-192x192.png"
     },
     {
         "badge": " [ Adult ]  ",
@@ -125,7 +131,13 @@
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "url": "/adult/watch-ungol-2024",
-        "color": ""
+        "color": "",
+        "uploadDate": "2025-01-01T00:00:00Z", 
+        "duration": "PT1M19S", 
+        "contentUrl": "https://www.youtube.com/watch?v=w58er0z6tYA",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/w58er0z6tYA",
+        "publisherName": "DigitalBay EntertainmentHub™",
+        "publisherLogo": "/android-chrome-192x192.png"
     },
     {
         "badge": " [ Adult ]  ",
@@ -189,7 +201,13 @@
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "url": "/adult/watch-ungol-2024",
-        "color": ""
+        "color": "",
+        "uploadDate": "2025-01-01T00:00:00Z", 
+        "duration": "PT1M19S", 
+        "contentUrl": "https://www.youtube.com/watch?v=BWfxGGWGVog",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/BWfxGGWGVog",
+        "publisherName": "DigitalBay EntertainmentHub™",
+        "publisherLogo": "/android-chrome-192x192.png"
     },
     {
         "badge": " [ Adult ]  ",
@@ -256,7 +274,13 @@
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "url": "/adult/watch-krista-2024",
-        "color": ""
+        "color": "",
+        "uploadDate": "2025-01-01T00:00:00Z", 
+        "duration": "PT1M19S", 
+        "contentUrl": "https://www.youtube.com/watch?v=sYdBFhlCjRo",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/sYdBFhlCjRo",
+        "publisherName": "DigitalBay EntertainmentHub™",
+        "publisherLogo": "/android-chrome-192x192.png"
     },
     {
         "badge": " [ Adult ]  ",
@@ -322,6 +346,12 @@
         "availabilityStarts": "2025-01-01",
         "availabilityDate": "",
         "url": "/adult/watch-donselya-2024",
-        "color": ""
+        "color": "",
+        "uploadDate": "2025-01-01T00:00:00Z", 
+        "duration": "PT1M19S", 
+        "contentUrl": "https://www.youtube.com/watch?v=yIHBwwxN-oQ",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/yIHBwwxN-oQ",
+        "publisherName": "DigitalBay EntertainmentHub™",
+        "publisherLogo": "/android-chrome-192x192.png"
     }
 ]

@@ -69,7 +69,13 @@
     "availabilityStarts": "2025-01-01",
     "availabilityDate": "",
     "url": "/tvshow/watch-lockerbie-a-search-for-truth-season-1-2025",
-    "color": ""
+    "color": "",
+    "uploadDate": "2025-01-01T00:00:00Z", 
+    "duration": "PT2M23S", 
+    "contentUrl": "https://www.youtube.com/watch?v=DwaImLdJSEw",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/DwaImLdJSEw",
+    "publisherName": "DigitalBay EntertainmentHub™",
+    "publisherLogo": "/android-chrome-192x192.png"
   },
   {
     "title": "Watch The Count of Monte Cristo Season 1 (2024)",
@@ -145,7 +151,13 @@
     "availabilityStarts": "2025-01-01",
     "availabilityDate": "",
     "url": "/tvshow/watch-the-count-of-monte-cristo-season-1-2024",
-    "color": ""
+    "color": "",
+    "uploadDate": "2025-01-01T00:00:00Z", 
+    "duration": "PT2M19S", 
+    "contentUrl": "https://www.youtube.com/watch?v=RfligH-6Hlw",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/RfligH-6Hlw",
+    "publisherName": "DigitalBay EntertainmentHub™",
+    "publisherLogo": "/android-chrome-192x192.png"
   },
   {
     "title": "Watch The Day Of The Jackal Season 1 (2024)",
@@ -223,6 +235,12 @@
     "availabilityStarts": "2025-01-01",
     "availabilityDate": "",
     "url": "/tvshow/watch-the-day-of-the-jackal-season-1-2024",
-    "color": ""
+    "color": "",
+    "uploadDate": "2025-01-01T00:00:00Z", 
+    "duration": "PT2M19S", 
+    "contentUrl": "https://www.youtube.com/watch?v=shsIx-ZVL0E",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/shsIx-ZVL0E",
+    "publisherName": "DigitalBay EntertainmentHub™",
+    "publisherLogo": "/android-chrome-192x192.png"
   }
 ]

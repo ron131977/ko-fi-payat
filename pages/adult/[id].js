@@ -71,6 +71,27 @@ const generateAdultSchema = (adultItem) =>
     },
   });
 
+  const generateVideoSchema = (adultItem) =>
+    JSON.stringify({
+      "@context": "http://schema.org/",
+      "@type": "VideoObject",
+      name: adultItem.title,
+      description: adultItem.description,
+      thumbnailUrl: adultItem.image1, // Ensure a valid URL
+      uploadDate: adultItem.uploadDate, // Proper ISO 8601 format with timezone
+      contentUrl: adultItem.contentUrl, // Direct link to the video
+      embedUrl: adultItem.embedUrl, // Embed URL for the video
+      duration: adultItem.duration, // ISO 8601 duration format
+      publisher: {
+        "@type": "Organization",
+        name: adultItem.publisherName,
+        logo: {
+          "@type": "ImageObject",
+           url: `https://buyonlinemovies.vercel.app${adultItem.publisherLogo}`, // Correct URL construction
+        },
+      },
+    });
+
 // Fetching specific adult data based on the dynamic slug (id)
 export async function getStaticProps({ params }) {
   try {
@@ -101,6 +122,7 @@ export async function getStaticProps({ params }) {
 export default function adultArticle({ adultItem, videoSources = [] }) {
   // const schemaData = NewsSchema(adultItem);
   const adultSchemaJson = generateAdultSchema (adultItem);
+  const videoSchema = generateVideoSchema(adultItem);
   const router = useRouter();
  
    const [accordionExpanded, setAccordionExpanded] = useState(false); // Added state for the accordion
@@ -360,6 +382,12 @@ export default function adultArticle({ adultItem, videoSources = [] }) {
           __html: adultSchemaJson,  // Use the correct variable here
         }}
       />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: videoSchema,
+        }}
+      />
       </Head>
       <SocialSharing />
       <AdultSkipAds />
@@ -383,6 +411,7 @@ export default function adultArticle({ adultItem, videoSources = [] }) {
           `,
         }}
       />
+
       <div style={styles.container}>
       <a
               href="https://t.me/ondigitalbay"
