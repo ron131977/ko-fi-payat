@@ -57,7 +57,7 @@ class MyDocument extends Document {
           <meta property='og:type' content='website' />
           <meta
             property='og:title'
-            content='DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD'
+            content='DigitalBay EntertainmentHub™ - @ $1.00 USD'
           />
           <meta
             property='og:description'
@@ -69,7 +69,7 @@ class MyDocument extends Document {
           />  
           <meta
             property='og:site_name'
-            content='DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD'
+            content='DigitalBay EntertainmentHub™ - @ $1.00 USD'
           />
           <meta
             property='og:image'
@@ -80,7 +80,7 @@ class MyDocument extends Document {
           <meta property='og:image:type' content='image/webp' />
           <meta
             name='application-name'
-            content='DigitalBay EntertainmentHub™ - Digital Entertainment@ $1.00 USD'
+            content='DigitalBay EntertainmentHub™ - @ $1.00 USD'
           />
           <meta
             property='article:modified_time'
